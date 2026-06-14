@@ -12,6 +12,7 @@ import './pages/study-plan.js';
 import './pages/vocabulary.js';
 import './pages/vocab-practice.js';
 import './pages/strategies.js';
+import './pages/writing-academy.js';
 import './pages/resources.js';
 
 import { renderDashboard } from './pages/dashboard.js';
