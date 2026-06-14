@@ -328,22 +328,40 @@
 }
 
 .filter-select {
-  background: var(--bg-tertiary);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text-primary);
-  border: 1px solid var(--bg-glass-border);
-  border-radius: var(--radius-sm);
-  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
   font-family: var(--font-body);
   font-size: 0.82rem;
   cursor: pointer;
-  transition: border-color var(--transition-fast);
-  appearance: auto;
+  transition: all var(--transition-base);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+  padding-right: 32px;
 }
 
-.filter-select:hover { border-color: rgba(59, 130, 246, 0.3); }
+.filter-select:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
+}
+
 .filter-select:focus {
   outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
   border-color: var(--accent-blue);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.filter-select option {
+  background-color: #1e1b29;
+  color: var(--text-primary);
+  padding: 10px;
 }
 
 /* Filter Pills */
@@ -1448,4 +1466,103 @@
   height: 14px;
   margin-top: 2px;
   cursor: pointer;
+}
+
+/* PEEL Highlight styles */
+.peel-highlight {
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background var(--transition-base);
+}
+.peel-p-text { background: rgba(96, 165, 250, 0.15); border-bottom: 2px solid #60a5fa; color: #fff; }
+.peel-e-text { background: rgba(192, 132, 252, 0.15); border-bottom: 2px solid #c084fc; color: #fff; }
+.peel-ex-text { background: rgba(52, 211, 153, 0.15); border-bottom: 2px solid #34d399; color: #fff; }
+.peel-l-text { background: rgba(251, 146, 220, 0.15); border-bottom: 2px solid #fb923c; color: #fff; }
+
+.essay-p {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.click-analyze {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-bottom: 1px dashed transparent;
+}
+
+.click-analyze:hover {
+  filter: brightness(1.25);
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Strategy Table Styling */
+.strategy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.strategy-table th, .strategy-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: top;
+}
+
+.strategy-table th {
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.strategy-table tr:last-child td {
+  border-bottom: none;
+}
+
+.strategy-table td {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ============================================================================
+   15. Writing Academy Task Switcher
+   ============================================================================ */
+.task-mode-toggle-container {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  border: 1px solid var(--bg-glass-border);
+}
+
+.task-mode-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.task-mode-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.task-mode-btn.active {
+  background: var(--accent-purple);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.2);
 }
