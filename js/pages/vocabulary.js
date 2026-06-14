@@ -3,7 +3,7 @@
 // ============================================================================
 import { VOCABULARY } from '../data.js';
 import { state, saveState } from '../state.js';
-import { $, $$, showToast } from '../utils.js';
+import { $, $$, showToast, speakWord } from '../utils.js';
 import { updateSidebarProgress } from '../progress.js';
 import { registerPage, navigateTo } from '../router.js';
 
@@ -54,6 +54,13 @@ function renderVocabulary() {
         </select>
       </div>
       <div class="filter-group">
+        <label class="filter-label">Accent:</label>
+        <select class="filter-select" id="vocab-accent-filter">
+          <option value="US" ${state.vocabAccent === 'US' ? 'selected' : ''}>🇺🇸 US Accent</option>
+          <option value="UK" ${state.vocabAccent === 'UK' ? 'selected' : ''}>🇬🇧 UK Accent</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <button class="btn btn-sm btn-outline" id="vocab-show-learned">
           ${state.vocabShowLearned ? '👁️ Show All' : '👁️‍🗨️ Hide Learned'}
         </button>
@@ -73,7 +80,10 @@ function renderVocabulary() {
                     ${isLearned ? '✅' : '○'}
                   </button>
                 </div>
-                <h4 class="vocab-word">${v.word}</h4>
+                <div class="vocab-word-row">
+                  <h4 class="vocab-word">${v.word}</h4>
+                  <button class="vocab-speak-btn" data-word="${v.word}" title="Listen pronunciation">🔊</button>
+                </div>
                 <p class="vocab-definition">${v.definition}</p>
                 <div class="vocab-topics">
                   ${v.topics.map(t => `<span class="vocab-topic-tag">${t}</span>`).join('')}
@@ -87,7 +97,10 @@ function renderVocabulary() {
                     ${isLearned ? '✅' : '○'}
                   </button>
                 </div>
-                <h4 class="vocab-word">${v.word}</h4>
+                <div class="vocab-word-row">
+                  <h4 class="vocab-word">${v.word}</h4>
+                  <button class="vocab-speak-btn" data-word="${v.word}" title="Listen pronunciation">🔊</button>
+                </div>
                 <div class="vocab-example">
                   <span class="vocab-example-label">Example:</span>
                   <p>"${v.example}"</p>
@@ -124,11 +137,33 @@ function renderVocabulary() {
     renderVocabulary();
   });
 
+  const accentFilter = $('#vocab-accent-filter', page);
+  if (accentFilter) {
+    accentFilter.addEventListener('change', (e) => {
+      state.vocabAccent = e.target.value;
+      saveState();
+    });
+  }
+
   // Vocab card flip
   $$('.vocab-card', page).forEach(card => {
     card.addEventListener('click', (e) => {
-      if (e.target.classList.contains('vocab-learn-btn') || e.target.closest('.vocab-learn-btn')) return;
+      if (
+        e.target.classList.contains('vocab-learn-btn') || 
+        e.target.closest('.vocab-learn-btn') ||
+        e.target.classList.contains('vocab-speak-btn') ||
+        e.target.closest('.vocab-speak-btn')
+      ) return;
       card.classList.toggle('flipped');
+    });
+  });
+
+  // Speak buttons
+  $$('.vocab-speak-btn', page).forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const word = btn.dataset.word;
+      speakWord(word, state.vocabAccent);
     });
   });
 

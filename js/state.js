@@ -10,11 +10,14 @@ function getDefaultState() {
     vocabLearned: [],
     vocabSublistFilter: 0,
     vocabTopicFilter: 'all',
+    vocabShowLearned: false,
     activeStrategyTab: 'reading',
     resourceTypeFilter: 'all',
     resourceSkillFilter: 'all',
     vocabBestMatchTime: null,
     vocabQuizHighScore: 0,
+    vocabAccent: 'US',
+    vocabAutoplay: false,
     user: null
   };
 }

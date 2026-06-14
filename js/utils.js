@@ -54,3 +54,38 @@ export function showToast(message, type = 'success') {
     setTimeout(() => toast.remove(), 300);
   }, 3000);
 }
+
+export function speakWord(word, accent = 'US') {
+  if (!('speechSynthesis' in window)) {
+    console.warn('Speech synthesis not supported in this browser.');
+    return;
+  }
+
+  // Cancel any ongoing speech
+  window.speechSynthesis.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(word);
+  
+  // Get all voices
+  const voices = window.speechSynthesis.getVoices();
+  const langTarget = accent === 'UK' ? 'en-gb' : 'en-us';
+  
+  // Find matching voice for the target language code
+  let voice = voices.find(v => v.lang.toLowerCase() === langTarget);
+  if (!voice) {
+    voice = voices.find(v => v.lang.toLowerCase().replace('_', '-').startsWith(langTarget));
+  }
+  if (!voice) {
+    voice = voices.find(v => v.lang.toLowerCase().startsWith(accent === 'UK' ? 'en-g' : 'en-u'));
+  }
+  if (!voice) {
+    voice = voices.find(v => v.lang.toLowerCase().startsWith('en'));
+  }
+
+  if (voice) {
+    utterance.voice = voice;
+  }
+  
+  utterance.rate = 0.9; // Slightly slower for optimal learning clarity
+  window.speechSynthesis.speak(utterance);
+}

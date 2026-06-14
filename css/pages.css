@@ -461,6 +461,38 @@
 
 .vocab-learn-btn:hover { transform: scale(1.2); }
 
+.vocab-word-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-sm);
+}
+
+.vocab-word-row .vocab-word {
+  margin-bottom: 0;
+}
+
+.vocab-speak-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all var(--transition-fast);
+  color: var(--text-secondary);
+}
+
+.vocab-speak-btn:hover {
+  background: var(--accent-indigo);
+  color: #fff;
+  transform: scale(1.1);
+}
+
 .vocab-word {
   font-size: 1.3rem;
   font-weight: 700;

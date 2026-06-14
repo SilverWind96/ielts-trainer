@@ -3,7 +3,7 @@
 // ============================================================================
 import { VOCABULARY } from '../data.js';
 import { state, saveState } from '../state.js';
-import { $, $$, showToast } from '../utils.js';
+import { $, $$, showToast, speakWord } from '../utils.js';
 import { updateSidebarProgress } from '../progress.js';
 import { registerPage } from '../router.js';
 
@@ -13,6 +13,7 @@ let practiceState = {
   pool: [],       // Current filtered list of words
   filterSublist: 0,
   filterPoolType: 'all', // 'all', 'unlearned', 'learned'
+  lastSpokenIndex: -1,
   
   // Flashcards state
   flashcards: {
@@ -102,6 +103,17 @@ function renderSelectScreen(page) {
               <option value="learned" ${practiceState.filterPoolType === 'learned' ? 'selected' : ''}>Learned Only (${state.vocabLearned.length})</option>
             </select>
           </div>
+          <div class="setup-group">
+            <label class="setup-label">Voice Accent:</label>
+            <select class="setup-select" id="practice-accent-select">
+              <option value="US" ${state.vocabAccent === 'US' ? 'selected' : ''}>🇺🇸 US Accent</option>
+              <option value="UK" ${state.vocabAccent === 'UK' ? 'selected' : ''}>🇬🇧 UK Accent</option>
+            </select>
+          </div>
+          <div class="setup-group-checkbox" style="display: flex; align-items: center; gap: 8px; margin-top: 12px; margin-bottom: 8px;">
+            <input type="checkbox" id="practice-autoplay-cb" ${state.vocabAutoplay ? 'checked' : ''} style="width: 16px; height: 16px; cursor: pointer;">
+            <label for="practice-autoplay-cb" style="font-size: 0.85rem; color: var(--text-secondary); cursor: pointer; user-select: none;">🔊 Auto-play on card reveal</label>
+          </div>
           <div class="pool-indicator">
             🎯 Target Pool size: <strong id="pool-size-label">${filtered.length} words</strong>
           </div>
@@ -158,6 +170,8 @@ function renderSelectScreen(page) {
   // Add Event Listeners
   const sublistSelect = $('#practice-sublist-select', page);
   const poolSelect = $('#practice-pool-select', page);
+  const accentSelect = $('#practice-accent-select', page);
+  const autoplayCb = $('#practice-autoplay-cb', page);
 
   const updatePoolCount = () => {
     practiceState.filterSublist = parseInt(sublistSelect.value);
@@ -178,6 +192,16 @@ function renderSelectScreen(page) {
 
   sublistSelect.addEventListener('change', updatePoolCount);
   poolSelect.addEventListener('change', updatePoolCount);
+  
+  accentSelect.addEventListener('change', (e) => {
+    state.vocabAccent = e.target.value;
+    saveState();
+  });
+
+  autoplayCb.addEventListener('change', (e) => {
+    state.vocabAutoplay = e.target.checked;
+    saveState();
+  });
 
   $$('.mode-card', page).forEach(card => {
     card.addEventListener('click', () => {
@@ -206,6 +230,7 @@ function startPracticeMode(mode) {
 
   practiceState.mode = mode;
   practiceState.pool = pool;
+  practiceState.lastSpokenIndex = -1;
 
   if (mode === 'flashcards') {
     practiceState.flashcards = {
@@ -337,11 +362,18 @@ function renderFlashcardScreen(page) {
         <div class="flashcard-interactive ${f.flipped ? 'flipped' : ''}" id="flashcard-box">
           <div class="flashcard-front">
             <span class="card-hint-top">Academic Vocabulary</span>
-            <h3>${wordObj.word}</h3>
+            <div class="flashcard-word-row" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <h3 style="margin: 0;">${wordObj.word}</h3>
+              <button class="flashcard-speak-btn" data-word="${wordObj.word}" title="Listen pronunciation" style="background: rgba(255, 255, 255, 0.05); border: none; border-radius: 50%; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.9rem; transition: all var(--transition-fast); color: var(--text-secondary);">🔊</button>
+            </div>
             <span class="card-instruction">Click card to reveal definition</span>
           </div>
           <div class="flashcard-back">
             <span class="card-hint-top">Definition & Context</span>
+            <div class="flashcard-word-row" style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px;">
+              <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary); font-weight: 600;">${wordObj.word}</h4>
+              <button class="flashcard-speak-btn" data-word="${wordObj.word}" title="Listen pronunciation" style="background: rgba(255, 255, 255, 0.05); border: none; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.8rem; transition: all var(--transition-fast); color: var(--text-secondary);">🔊</button>
+            </div>
             <p class="card-definition">${wordObj.definition}</p>
             <div class="card-context">
               <strong>Example:</strong>
@@ -359,13 +391,29 @@ function renderFlashcardScreen(page) {
     </div>
   `;
 
+  // Auto-play pronunciation if enabled
+  if (state.vocabAutoplay && practiceState.lastSpokenIndex !== f.currentIndex) {
+    practiceState.lastSpokenIndex = f.currentIndex;
+    setTimeout(() => {
+      speakWord(wordObj.word, state.vocabAccent);
+    }, 150);
+  }
+
   // Attach events
   $('#btn-practice-exit').addEventListener('click', exitPractice);
   
   const box = $('#flashcard-box');
-  box.addEventListener('click', () => {
+  box.addEventListener('click', (e) => {
+    if (e.target.classList.contains('flashcard-speak-btn') || e.target.closest('.flashcard-speak-btn')) return;
     f.flipped = !f.flipped;
     box.classList.toggle('flipped');
+  });
+
+  $$('.flashcard-speak-btn', page).forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent card from flipping
+      speakWord(btn.dataset.word, state.vocabAccent);
+    });
   });
 
   $('#btn-flash-still').addEventListener('click', () => {
