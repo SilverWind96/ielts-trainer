@@ -1,0 +1,32 @@
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Gemini CLI / Antigravity workspace files
+.gemini/
+.agents/
+.system_generated/
+transcript*.jsonl
+tasks/
+logs/
+artifacts/
+scratch/

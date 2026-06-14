@@ -1,0 +1,402 @@
+/* ============================================================================
+   IELTS TRAINER — Authentication and Profile Widget Styles
+   ============================================================================ */
+
+.sidebar-profile-widget {
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--bg-glass-border);
+  background: rgba(255, 255, 255, 0.01);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* --- Logged Out Card --- */
+.auth-prompt-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-prompt-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.auth-prompt-desc {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.google-signin-btn-container {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  min-height: 40px; /* Pre-allocates height to avoid layout shift when GIS loads */
+}
+
+.btn-demo-signin {
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px dashed rgba(139, 92, 246, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--accent-purple);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px var(--space-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.btn-demo-signin:hover {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: var(--accent-purple);
+  color: var(--text-primary);
+}
+
+.auth-setup-config {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  margin-top: 4px;
+}
+
+.setup-config-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.setup-config-input-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.setup-config-input {
+  flex: 1;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  min-width: 0;
+}
+
+.setup-config-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.btn-setup-config-save {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-setup-config-save:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.setup-config-help {
+  font-size: 0.62rem;
+  color: var(--text-tertiary);
+  line-height: 1.3;
+}
+
+.google-signin-btn-row {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.btn-config-reset {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--bg-glass-border);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+}
+
+.btn-config-reset:hover {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Logged In Card --- */
+.user-profile-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-md);
+  padding: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--accent-blue);
+  object-fit: cover;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevents overflow of long emails/names */
+}
+
+.user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-status {
+  font-size: 0.68rem;
+  color: var(--accent-emerald);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+/* Sync pulsing dot */
+.status-pulse {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-emerald);
+  border-radius: var(--radius-full);
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-emerald);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+}
+
+.btn-signout {
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-signout:hover {
+  background: rgba(244, 63, 94, 0.12);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ============================================================================
+   20. Auth Gate (Full-screen blocking login)
+   ============================================================================ */
+.auth-gate {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: var(--bg-primary);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  overflow-y: auto;
+}
+
+body.auth-blocked .auth-gate {
+  display: flex;
+}
+
+body.auth-blocked .sidebar,
+body.auth-blocked .main-content,
+body.auth-blocked .mobile-menu-toggle,
+body.auth-blocked .sidebar-overlay {
+  display: none !important;
+}
+
+.auth-gate-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+}
+
+.auth-gate-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: float 20s infinite alternate;
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--accent-blue);
+  top: 10%;
+  left: 10%;
+}
+
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent-purple);
+  bottom: 10%;
+  right: 10%;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -60px) scale(1.1); }
+  100% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+.auth-gate-card {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-2xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  text-align: center;
+  box-shadow: var(--shadow-lg), var(--shadow-glow-blue);
+  animation: fadeInUp 0.5s var(--transition-spring);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(17, 24, 39, 0.8);
+}
+
+.auth-gate-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.auth-gate-logo-icon {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.5));
+  margin-bottom: var(--space-xs);
+}
+
+.auth-gate-logo h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-gate-logo-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.auth-gate-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.google-signin-btn-row-gate {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: var(--space-sm) 0;
+}
+
+.auth-gate-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  width: 100%;
+}
+
+.auth-gate-divider::before,
+.auth-gate-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--bg-glass-border);
+  margin: 0 var(--space-md);
+}
+
+.btn-gate-demo {
+  background: rgba(59, 130, 246, 0.1) !important;
+  border: 1px solid rgba(59, 130, 246, 0.25) !important;
+  color: var(--accent-blue) !important;
+  box-shadow: none !important;
+  font-size: 0.88rem;
+  padding: 12px var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+.btn-gate-demo:hover {
+  background: rgba(59, 130, 246, 0.18) !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--text-primary) !important;
+}

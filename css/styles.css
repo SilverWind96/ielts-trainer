@@ -1,0 +1,11 @@
+/* ============================================================================
+   IELTS TRAINER — Main Stylesheet Entry Point
+   ============================================================================ */
+
+@import './base.css';
+@import './components.css';
+@import './dashboard.css';
+@import './pages.css';
+@import './vocab-practice.css';
+@import './auth.css';
+@import './responsive.css';

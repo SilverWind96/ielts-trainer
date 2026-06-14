@@ -1,0 +1,355 @@
+/* ============================================================================
+   IELTS TRAINER — Dashboard Styles
+   ============================================================================ */
+
+/* ============================================================================
+   8. Dashboard Components
+   ============================================================================ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.stat-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.stat-card-primary::before { background: var(--gradient-primary); }
+.stat-card-accent::before { background: var(--gradient-purple); }
+.stat-card-success::before { background: var(--gradient-success); }
+.stat-card-info::before { background: linear-gradient(135deg, var(--accent-purple), var(--accent-rose)); }
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  font-size: 1.6rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.stat-unit {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+.stat-bar {
+  height: 4px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 2px;
+  margin-top: var(--space-xs);
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  transition: width 1s ease;
+  position: relative;
+}
+
+.stat-bar-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-lg);
+}
+
+.dashboard-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Current Week Card */
+.current-week-card { grid-column: 1; }
+
+.phase-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.phase-foundation { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+.phase-skill-building { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+.phase-exam-mastery { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+
+/* Progress Bar */
+.week-progress-bar { margin-bottom: var(--space-lg); }
+
+.progress-bar {
+  height: 8px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-sm { height: 6px; }
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+  position: relative;
+}
+
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  animation: shimmer 2.5s infinite;
+}
+
+.progress-text {
+  display: block;
+  text-align: right;
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+/* Day Summary */
+.day-summary { margin-bottom: var(--space-md); }
+
+.day-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.day-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.day-task-count {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+}
+
+/* Task Mini */
+.task-mini {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 4px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.task-mini:hover {
+  background: rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.15);
+}
+
+.task-mini.completed {
+  opacity: 0.5;
+}
+
+.task-mini.completed .task-mini-title {
+  text-decoration: line-through;
+  color: var(--text-tertiary);
+}
+
+.task-mini-title {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-duration {
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+/* Skills Card */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.skill-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-pct {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Skill-specific progress fills */
+.skill-fill-reading { background: linear-gradient(90deg, var(--accent-purple), #a78bfa) !important; }
+.skill-fill-writing { background: linear-gradient(90deg, var(--accent-blue), #60a5fa) !important; }
+.skill-fill-listening { background: linear-gradient(90deg, var(--accent-cyan), #22d3ee) !important; }
+.skill-fill-speaking { background: linear-gradient(90deg, var(--accent-amber), #fbbf24) !important; }
+
+/* Phase Card */
+.phases-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.phase-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.phase-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 130px;
+}
+
+.phase-icon { font-size: 1.3rem; }
+
+.phase-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+}
+
+.phase-weeks {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  display: block;
+}
+
+.phase-progress-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.phase-pct {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+  min-width: 35px;
+  text-align: right;
+}
+
+.phase-fill-foundation { background: var(--gradient-primary) !important; }
+.phase-fill-skill-building { background: linear-gradient(90deg, var(--accent-amber), #fbbf24) !important; }
+.phase-fill-exam-mastery { background: var(--gradient-success) !important; }
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quick-link-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(59, 130, 246, 0.06);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.quick-link-btn:hover {
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--text-primary);
+  border-color: rgba(59, 130, 246, 0.2);
+  transform: translateX(4px);
+}
