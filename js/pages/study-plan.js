@@ -14,7 +14,7 @@ function renderStudyPlan() {
   page.innerHTML = `
     <div class="page-header">
       <div class="page-header-content">
-        <h2 class="page-title">12-Week Study Plan</h2>
+        <h2 class="page-title">8-Week Study Plan</h2>
         <p class="page-subtitle">Your structured path from foundation to exam mastery</p>
       </div>
     </div>

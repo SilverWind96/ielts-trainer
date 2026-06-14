@@ -122,9 +122,9 @@ function renderDashboard() {
           <div class="card-header"><h3>🏗️ Phase Progress</h3></div>
           <div class="phases-list">
             ${[
-              { key: 'foundation', label: 'Foundation', weeks: '1-4', icon: '🧱' },
-              { key: 'skill-building', label: 'Skill Building', weeks: '5-8', icon: '⚡' },
-              { key: 'exam-mastery', label: 'Exam Mastery', weeks: '9-12', icon: '🏆' }
+              { key: 'foundation', label: 'Foundation', weeks: '1-2', icon: '🧱' },
+              { key: 'skill-building', label: 'Skill Building', weeks: '3-5', icon: '⚡' },
+              { key: 'exam-mastery', label: 'Exam Mastery', weeks: '6-8', icon: '🏆' }
             ].map(p => {
               const pp = getPhaseProgress(p.key);
               return `

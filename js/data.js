@@ -3,10 +3,10 @@
 // ============================================================================
 
 // ----------------------------------------------------------------------------
-// 1. WEEKS — 12-week study plan
+// 1. WEEKS — 8-week study plan
 // ----------------------------------------------------------------------------
 export const WEEKS = [
-  // ===== PHASE 1: FOUNDATION (Weeks 1-4) ====================================
+  // ===== PHASE 1: FOUNDATION (Weeks 1-2) ====================================
   {
     id: 1,
     title: 'Diagnostic & Orientation',
@@ -22,21 +22,21 @@ export const WEEKS = [
             id: 'w1d1t1',
             skill: 'reading',
             title: 'Take diagnostic Reading test',
-            description: 'Complete a full IELTS Academic Reading test (3 passages, 40 questions, 60 minutes) under strict timed conditions. Use official Cambridge practice materials if possible. Score yourself honestly and record your band.',
+            description: 'Complete a full IELTS Academic Reading test (3 passages, 40 questions, 60 minutes) under strict timed conditions. Record your band score.',
             minutes: 70
           },
           {
             id: 'w1d1t2',
-            skill: 'reading',
+            skill: 'general',
             title: 'Study IELTS test format & question types',
-            description: 'Learn the structure of all four IELTS papers: Reading (3 passages, 60 min), Listening (4 sections, 30 min + 10 min transfer), Writing (Task 1 + Task 2, 60 min), Speaking (3 parts, 11-14 min). Familiarize yourself with each question type.',
+            description: 'Learn the structure of all four IELTS papers: Reading, Listening, Writing, and Speaking. Familiarize yourself with question formats.',
             minutes: 30
           },
           {
             id: 'w1d1t3',
             skill: 'writing',
             title: 'Create your error log notebook',
-            description: 'Set up a dedicated notebook or spreadsheet for tracking mistakes. Create sections for Reading, Listening, Writing, and Speaking. Include columns for: date, question type, error description, correct answer, and reason for mistake.',
+            description: 'Set up a dedicated notebook or spreadsheet for tracking mistakes with columns for date, question type, error description, and reason for mistake.',
             minutes: 15
           }
         ]
@@ -49,21 +49,21 @@ export const WEEKS = [
             id: 'w1d2t1',
             skill: 'listening',
             title: 'Take diagnostic Listening test',
-            description: 'Complete a full IELTS Listening test (4 sections, 40 questions, approximately 30 minutes of audio). Listen only once — do not replay. Transfer your answers and score yourself.',
+            description: 'Complete a full IELTS Listening test (4 sections, 40 questions, approximately 30 minutes of audio). Listen only once.',
             minutes: 40
           },
           {
             id: 'w1d2t2',
             skill: 'listening',
             title: 'Analyze listening errors and patterns',
-            description: 'Go through each incorrect answer. Replay the audio and identify why you got it wrong. Was it vocabulary? Speed? Spelling? Distraction? Record patterns in your error log.',
+            description: 'Go through each incorrect answer, replay the audio, and identify why you got it wrong. Record patterns in your error log.',
             minutes: 20
           },
           {
             id: 'w1d2t3',
             skill: 'listening',
             title: 'Study Listening question types overview',
-            description: 'Learn the 6 main Listening question types: form/note completion, multiple choice, matching, map/plan labeling, sentence completion, and short answer. Understand what each requires.',
+            description: 'Learn the 6 main Listening question types: form completion, multiple choice, matching, map labeling, sentence completion, and short answer.',
             minutes: 30
           }
         ]
@@ -76,21 +76,21 @@ export const WEEKS = [
             id: 'w1d3t1',
             skill: 'writing',
             title: 'Take diagnostic Writing test — Task 1 & 2',
-            description: 'Write a full IELTS Writing test: Task 1 (describe a visual, 150+ words, 20 min) and Task 2 (essay, 250+ words, 40 min). Time yourself strictly. Do not use a dictionary.',
+            description: 'Write a full IELTS Writing test: Task 1 (describe visual, 150+ words, 20 min) and Task 2 (essay, 250+ words, 40 min). Do not use a dictionary.',
             minutes: 60
           },
           {
             id: 'w1d3t2',
             skill: 'writing',
             title: 'Study Band Descriptors for Writing',
-            description: 'Read and understand the official IELTS Writing Band Descriptors. Focus on the criteria: Task Achievement/Response, Coherence & Cohesion, Lexical Resource, and Grammatical Range & Accuracy. Know what Band 7 looks like.',
+            description: 'Read and understand the official IELTS Writing Band Descriptors. Focus on Task Response, Coherence & Cohesion, Lexical Resource, and Accuracy.',
             minutes: 30
           },
           {
             id: 'w1d3t3',
             skill: 'writing',
             title: 'Review model Writing answers',
-            description: 'Read 2-3 model Band 8-9 Writing answers for both Task 1 and Task 2. Note the structure, vocabulary, and how the writer addresses the task fully. Compare with your diagnostic responses.',
+            description: 'Read model Band 8-9 Writing answers for both tasks. Compare with your diagnostic responses and note formatting differences.',
             minutes: 20
           }
         ]
@@ -102,23 +102,23 @@ export const WEEKS = [
           {
             id: 'w1d4t1',
             skill: 'speaking',
-            title: 'Practice Speaking Part 1 — record 5 questions',
-            description: 'Record yourself answering 5 Speaking Part 1 questions about home, work, or studies. Aim for 3-4 sentence answers. Listen back and note any hesitations, grammatical errors, or pronunciation issues.',
+            title: 'Take diagnostic Speaking test',
+            description: 'Record yourself answering a full Speaking mock test (Parts 1, 2, and 3). Listen to the recording and write a summary of your performance.',
             minutes: 30
           },
           {
             id: 'w1d4t2',
             skill: 'speaking',
-            title: 'Study Speaking assessment criteria',
-            description: 'Learn the 4 Speaking criteria: Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation. Understand what examiners are listening for at Band 7+.',
+            title: 'Study Speaking Band Descriptors',
+            description: 'Analyze the Speaking criteria: Fluency & Coherence, Lexical Resource, Grammatical Range, and Pronunciation. Understand the Band 7 standards.',
             minutes: 20
           },
           {
             id: 'w1d4t3',
             skill: 'speaking',
-            title: 'Study pronunciation basics',
-            description: 'Focus on word stress, sentence stress, and intonation patterns. Practice the difference between content words (stressed) and function words (unstressed). Record yourself reading a short paragraph and listen back.',
-            minutes: 20
+            title: 'Review model Speaking answers',
+            description: 'Listen to mock interviews of Band 7.5+ candidates. Note the length of answers, vocabulary choices, and natural use of cohesive devices.',
+            minutes: 25
           }
         ]
       },
@@ -129,23 +129,23 @@ export const WEEKS = [
           {
             id: 'w1d5t1',
             skill: 'reading',
-            title: 'Review all diagnostic scores & identify weakest skills',
-            description: 'Compare your diagnostic scores across all four skills. Rank them from weakest to strongest. Identify specific question types where you lost the most marks. This will guide your study priorities.',
-            minutes: 30
+            title: 'Learn Reading skimming and scanning',
+            description: 'Read the Reading strategies guide. Practice skimming for gist (2 minutes per passage) and scanning for keywords (names, numbers, dates).',
+            minutes: 40
           },
           {
             id: 'w1d5t2',
-            skill: 'writing',
-            title: 'Plan study priorities based on results',
-            description: 'Based on your diagnostic analysis, create a priority list. If Listening is weakest, plan extra practice sessions. If Writing Task 2 scored lowest, schedule more essay practice. Write a personalized action plan.',
-            minutes: 20
+            skill: 'reading',
+            title: 'Apply skimming & scanning to passages',
+            description: 'Complete 3 Reading passages focusing ONLY on skimming and scanning first. Do not answer questions; just outline paragraph topics.',
+            minutes: 30
           },
           {
             id: 'w1d5t3',
             skill: 'vocabulary',
-            title: 'Begin AWL Sublist 1 — learn first 15 words',
-            description: 'Start the Academic Word List with Sublist 1 (the most frequent academic words). Learn 15 words today: their meaning, pronunciation, word family (noun/verb/adjective forms), and use each in a sentence.',
-            minutes: 30
+            title: 'AWL Sublist 1 — learn 15 words',
+            description: 'Review Sublist 1 vocabulary in the Study Arena. Master spelling, definition, example sentences, and collocations.',
+            minutes: 25
           }
         ]
       },
@@ -155,36 +155,36 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w1d6t1',
-            skill: 'reading',
-            title: 'Read 1 academic article from BBC/Guardian',
-            description: 'Choose an article from BBC Future, The Guardian Long Read, or similar quality source. Read actively: highlight topic sentences, note paragraph structure, underline unfamiliar words. Summarize the main argument.',
+            skill: 'listening',
+            title: 'Learn Listening pre-listening strategies',
+            description: 'Read strategies for predicting answers. Practice analyzing questions during the 30-second silence to anticipate nouns, verbs, or numbers.',
             minutes: 30
           },
           {
             id: 'w1d6t2',
             skill: 'listening',
-            title: 'Listen to 1 TED talk with subtitles',
-            description: 'Watch a TED talk (12-18 minutes) on an academic topic. Use subtitles the first time, then try without. Note down key ideas and any new vocabulary. Practice summarizing the talk in 3 sentences.',
-            minutes: 20
+            title: 'Practice Listening spelling and numbers',
+            description: 'Listen to Section 1 dictation practice (names, telephone numbers, addresses, postcodes). Focus on capitalization and number strings.',
+            minutes: 30
           },
           {
             id: 'w1d6t3',
-            skill: 'vocabulary',
-            title: 'Review AWL words from this week',
-            description: 'Go through all the AWL Sublist 1 words you learned. Test yourself: cover the definition and try to recall it. Use each word in a new sentence. Mark any words you are unsure about for extra review.',
-            minutes: 20
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Go through all errors made this week. Categorize them and write down preventions. Complete a light review of AWL Sublist 1.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w1d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Take a complete break from IELTS study. Rest your mind, exercise, and recharge. Consistent rest prevents burnout and improves long-term retention.',
+            id: 'w1d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Do not study today. Let your brain rest and recharge for the upcoming weeks of core strategy drills.',
             minutes: 0
           }
         ]
@@ -193,10 +193,10 @@ export const WEEKS = [
   },
   {
     id: 2,
-    title: 'Grammar & Core Vocabulary Foundation',
+    title: 'Core Skills & Error Tracking',
     phase: 'foundation',
     phaseLabel: 'Phase 1: Foundation',
-    summary: 'Build grammar foundations with tenses, passive voice, and relative clauses while expanding core vocabulary.',
+    summary: 'Learn fundamental strategies for all question types and set up your error tracking notebook.',
     days: [
       {
         day: 1,
@@ -205,23 +205,23 @@ export const WEEKS = [
           {
             id: 'w2d1t1',
             skill: 'reading',
-            title: 'Read 1 academic article — practice identifying main ideas',
-            description: 'Read a full academic article. For each paragraph, write a one-sentence summary of the main idea. Then identify the overall thesis. This builds the skill of distinguishing main ideas from supporting details.',
-            minutes: 30
+            title: 'Reading: Multiple Choice & Headings',
+            description: 'Study Matching Headings and Multiple Choice strategies. Complete 2 practice passages focusing strictly on locating the main ideas.',
+            minutes: 50
           },
           {
             id: 'w2d1t2',
-            skill: 'grammar',
-            title: 'Grammar: Present perfect vs past simple',
-            description: 'Study the difference between present perfect ("has increased") and past simple ("increased"). Complete 15-20 exercises focusing on when to use each tense. Key: present perfect for unfinished time periods or results relevant to now.',
-            minutes: 30
+            skill: 'reading',
+            title: 'Analyze matching headings errors',
+            description: 'Review incorrect heading matches. Identify if you were distracted by keyword matching or failed to understand the paragraph meaning.',
+            minutes: 25
           },
           {
             id: 'w2d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 1 continued — 15 new words',
-            description: 'Learn 15 more words from AWL Sublist 1. For each word, note the word family, write a definition in your own words, and create an IELTS-style example sentence. Test yourself on yesterday\'s words first.',
-            minutes: 25
+            title: 'AWL Sublist 1 continued — learn 15 words',
+            description: 'Study the remaining words of Sublist 1. Practice using them in spelling and matching game modes.',
+            minutes: 20
           }
         ]
       },
@@ -232,23 +232,23 @@ export const WEEKS = [
           {
             id: 'w2d2t1',
             skill: 'listening',
-            title: 'Listening practice — Section 1 form completion',
-            description: 'Practice 3 Section 1 exercises (social/everyday conversations). Focus on form completion and note completion. Pay attention to spelling of names, addresses, and numbers. Use the prediction technique before playing audio.',
-            minutes: 30
+            title: 'Listening: Form & Table Completion',
+            description: 'Practice 3 Section 1 form and table completion exercises. Focus on word count limits (e.g., NO MORE THAN TWO WORDS AND/OR A NUMBER).',
+            minutes: 40
           },
           {
             id: 'w2d2t2',
-            skill: 'grammar',
-            title: 'Grammar: Passive voice basics + exercises',
-            description: 'Study passive voice formation (be + past participle). Practice converting active to passive and identifying when passive is more appropriate in academic writing. Complete 15 transformation exercises.',
-            minutes: 30
+            skill: 'listening',
+            title: 'Spelling validation drill',
+            description: 'Audit spelling errors. Focus on double letters (e.g., committee, accommodate) and silent letters which commonly cause point loss.',
+            minutes: 20
           },
           {
             id: 'w2d2t3',
-            skill: 'vocabulary',
-            title: 'Write example sentences with new AWL words',
-            description: 'Take all 30 AWL words learned so far and write original example sentences for at least 15 of them. Use IELTS-relevant contexts (education, environment, technology). Check your sentences for grammatical accuracy.',
-            minutes: 20
+            skill: 'grammar',
+            title: 'Grammar: Subject-Verb Agreement',
+            description: 'Review subject-verb agreement in complex sentences (e.g., "The development of new technologies has/have..."). Do 15 practice grammar drills.',
+            minutes: 30
           }
         ]
       },
@@ -259,22 +259,22 @@ export const WEEKS = [
           {
             id: 'w2d3t1',
             skill: 'writing',
-            title: 'Writing Task 1 — line graph practice',
-            description: 'Study a model line graph answer first: note the overview, grouping, and trend language. Then write your own response to a different line graph. Aim for 150+ words in 20 minutes. Include an overview paragraph.',
-            minutes: 50
+            title: 'Writing Task 1: Line Graphs & Bar Charts',
+            description: 'Study Task 1 line graph and bar chart overview. Learn trends vocabulary (increase, decrease, fluctuate, plateau) and adverb/adjective use.',
+            minutes: 45
           },
           {
             id: 'w2d3t2',
-            skill: 'grammar',
-            title: 'Grammar: Relative clauses (who/which/that/where)',
-            description: 'Study defining and non-defining relative clauses. Practice combining sentences using who, which, that, where, and whose. Complete exercises identifying when commas are needed (non-defining clauses).',
-            minutes: 25
+            skill: 'writing',
+            title: 'Write a Task 1 overview and description',
+            description: 'Practice writing the introduction (paraphrase) and a strong overview paragraph (main trends) for a line graph. Do not write body paragraphs yet.',
+            minutes: 30
           },
           {
             id: 'w2d3t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Education — learn 15 words',
-            description: 'Learn 15 essential Education topic words: curriculum, enrolment, tertiary, literacy, pedagogy, scholarship, compulsory, vocational, dissertation, syllabus, tuition, undergraduate, postgraduate, seminar, faculty. Use each in a sentence.',
+            skill: 'writing',
+            title: 'Study comparisons grammar',
+            description: 'Review comparative grammar structures (e.g., "significantly higher than", "not as dramatic as", "three times as many").',
             minutes: 20
           }
         ]
@@ -286,23 +286,23 @@ export const WEEKS = [
           {
             id: 'w2d4t1',
             skill: 'speaking',
-            title: 'Speaking Part 1 — 3 new topics: hometown, food, weather',
-            description: 'Practice answering Part 1 questions on hometown ("Where do you come from?"), food ("Do you prefer eating at home or in restaurants?"), and weather ("What\'s the weather like in your country?"). Record and review.',
+            title: 'Speaking Part 1: ARE answering method',
+            description: 'Master the Answer + Reason + Example (A+R+E) structure. Answer 10 Part 1 questions on familiar topics using this structure.',
             minutes: 30
           },
           {
             id: 'w2d4t2',
-            skill: 'grammar',
-            title: 'Grammar: Conditional Type 1 & 2 practice',
-            description: 'Study Type 1 (If + present, will + verb) for real possibilities and Type 2 (If + past, would + verb) for hypothetical situations. Complete 15 exercises. Practice using them in Speaking Part 3 style answers.',
-            minutes: 30
+            skill: 'speaking',
+            title: 'Fluency drill: Speak without pauses',
+            description: 'Record yourself speaking on 5 daily topics for 1 minute each. Focus on minimizing filler words (uh, um, like) and long hesitations.',
+            minutes: 20
           },
           {
             id: 'w2d4t3',
-            skill: 'reading',
-            title: 'Read 1 academic article — underline unknown words',
-            description: 'Read an article from a quality source. Underline every word you don\'t know. After reading, look up the top 10 most important unknown words. Add them to your personal vocabulary list with definitions and examples.',
-            minutes: 25
+            skill: 'vocabulary',
+            title: 'AWL Sublist 2 — learn 15 words',
+            description: 'Review Sublist 2 vocabulary in the Study Arena. Focus on usage in Writing Task 1 descriptions.',
+            minutes: 20
           }
         ]
       },
@@ -312,23 +312,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w2d5t1',
-            skill: 'listening',
-            title: 'Listening practice — Section 2 map labeling + MCQ',
-            description: 'Practice 3 Section 2 exercises (monologues in social contexts). Focus on map/plan labeling and multiple choice questions. For maps, pre-read all labels and try to predict location language (opposite, next to, adjacent).',
-            minutes: 35
+            skill: 'reading',
+            title: 'Reading: True / False / Not Given',
+            description: 'Study the difference between FALSE (contradicts text) and NOT GIVEN (no information). Complete 15 targeted TFNG questions.',
+            minutes: 50
           },
           {
             id: 'w2d5t2',
-            skill: 'grammar',
-            title: 'Grammar: Complex sentences with although/while/whereas',
-            description: 'Learn to use concession and contrast connectors: although, while, whereas, even though, despite, in spite of. Practice writing complex sentences comparing two ideas. This is essential for Writing Task 2.',
+            skill: 'reading',
+            title: 'Review TFNG errors and synonyms',
+            description: 'Analyze mistake logs. Write down the synonyms used in the passage that match the keywords in the questions.',
             minutes: 25
           },
           {
             id: 'w2d5t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 1 review + quiz yourself',
-            description: 'Complete review of all AWL Sublist 1 words. Quiz yourself by covering definitions and trying to recall them. Test yourself on spelling. Identify any words you still struggle with and review those extra times.',
+            title: 'AWL Sublist 2 continued — learn 15 words',
+            description: 'Study the remaining words of Sublist 2. Master spelling using the writing game mode.',
             minutes: 20
           }
         ]
@@ -339,48 +339,49 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w2d6t1',
-            skill: 'reading',
-            title: 'Reading practice — 1 full passage with T/F/NG questions',
-            description: 'Complete one full reading passage focusing on True/False/Not Given questions. Pay careful attention to the difference between False (contradicts the passage) and Not Given (no information). Check answers and log errors.',
-            minutes: 25
+            skill: 'listening',
+            title: 'Listening: Map Labeling & Matching',
+            description: 'Study direction vocabulary (clockwise, adjacent, opposite, corridor, junction). Complete 2 map labeling exercises.',
+            minutes: 40
           },
           {
             id: 'w2d6t2',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Technology — learn 15 words',
-            description: 'Learn 15 Technology topic words: innovation, automation, artificial intelligence, algorithm, bandwidth, cybersecurity, digital literacy, encryption, infrastructure, obsolete, software, surveillance, virtual reality, biotechnology, broadband. Use each in a sentence.',
+            skill: 'listening',
+            title: 'Practice direction tracking',
+            description: 'Listen to mock map descriptions and trace routes on a sketch. Note synonyms for directions.',
             minutes: 20
           },
           {
             id: 'w2d6t3',
-            skill: 'grammar',
-            title: 'Review all grammar from this week',
-            description: 'Go through all grammar topics covered: present perfect vs past simple, passive voice, relative clauses, conditionals, and complex sentences. Complete a mixed exercise sheet. Identify any areas that still need work.',
-            minutes: 25
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Audit errors from Week 2. Update your error log. Run a vocabulary game to test both AWL Sublists 1 and 2.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w2d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Take a full day off from formal study. You can do light English exposure like watching an English movie or reading for pleasure, but no IELTS-specific practice.',
+            id: 'w2d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Rest and relax. Consolidate your learning before transitioning into Phase 2 next week.',
             minutes: 0
           }
         ]
       }
     ]
   },
+  // ===== PHASE 2: SKILL BUILDING (Weeks 3-5) =================================
   {
     id: 3,
-    title: 'Question Types Introduction',
-    phase: 'foundation',
-    phaseLabel: 'Phase 1: Foundation',
-    summary: 'Master skimming and scanning techniques, practice all major question types, and write your first full essay.',
+    title: 'Writing Task 1 & Speaking Part 2',
+    phase: 'skill-building',
+    phaseLabel: 'Phase 2: Skill Building',
+    summary: 'Build advanced visual description skills for Writing Task 1 and master cue card planning for Speaking Part 2.',
     days: [
       {
         day: 1,
@@ -388,23 +389,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d1t1',
-            skill: 'reading',
-            title: 'Reading: Skimming technique practice — 2 passages',
-            description: 'Practice skimming 2 reading passages. Read only the title, subheadings, first sentence of each paragraph, and last sentence. Write a 2-sentence summary of each passage from skimming alone. Then read fully to check accuracy.',
-            minutes: 40
+            skill: 'writing',
+            title: 'Writing Task 1: Tables & Pie Charts',
+            description: 'Study Table and Pie Chart structures. Learn how to group data logically rather than describing every single point.',
+            minutes: 45
           },
           {
             id: 'w3d1t2',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 2 — learn 15 words',
-            description: 'Begin AWL Sublist 2. Learn 15 new academic words with definitions, word families, and example sentences. Test yourself on Sublist 1 words first to ensure retention.',
-            minutes: 25
+            skill: 'writing',
+            title: 'Write a full Table report',
+            description: 'Write a full report (150+ words, 20 min) comparing statistics in a table. Focus on logical data groupings and passive voice.',
+            minutes: 30
           },
           {
             id: 'w3d1t3',
-            skill: 'grammar',
-            title: 'Grammar: Subordinating conjunctions practice',
-            description: 'Practice using because, since, as (reason), so that (purpose), unless, provided that, as long as (condition). Write 10 complex sentences using different subordinating conjunctions in academic contexts.',
+            skill: 'vocabulary',
+            title: 'AWL Sublist 3 — learn 15 words',
+            description: 'Review Sublist 3 vocabulary in the Study Arena. Focus on collocations for data comparison.',
             minutes: 20
           }
         ]
@@ -415,23 +416,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d2t1',
-            skill: 'listening',
-            title: 'Listening: Full practice test Sections 1-4',
-            description: 'Complete a full IELTS Listening test with all 4 sections. Do not pause or replay. Write your answers as you listen, then transfer them to the answer sheet within 10 minutes. Score yourself.',
+            skill: 'speaking',
+            title: 'Speaking Part 2: Cue Card Planning',
+            description: 'Learn the 1-minute cue card planning strategy. Practice brainstorming ideas, prompts, and structuring your notes in columns.',
             minutes: 40
           },
           {
             id: 'w3d2t2',
-            skill: 'listening',
-            title: 'Analyze all listening errors in error log',
-            description: 'For each incorrect answer, replay the audio and identify the exact moment the answer was given. Categorize your mistakes: vocabulary gap, speed issue, distractor confusion, spelling error, or lost concentration.',
+            skill: 'speaking',
+            title: 'Record a Part 2 response',
+            description: 'Record yourself speaking for 2 full minutes after 1 minute of preparation. Check if you run out of ideas before the timer.',
             minutes: 25
           },
           {
             id: 'w3d2t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Environment — 15 words',
-            description: 'Learn 15 Environment topic words: biodiversity, carbon footprint, conservation, deforestation, ecosystem, emissions, endangered, fossil fuels, greenhouse effect, pollution, renewable energy, sustainability, urbanization, waste management, wildlife.',
+            skill: 'speaking',
+            title: 'Review Part 2 notes and transition markers',
+            description: 'Practice using transitions (e.g., "Moving on to...", "Regarding...", "As for...") to connect cue card prompts smoothly.',
             minutes: 20
           }
         ]
@@ -442,23 +443,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d3t1',
-            skill: 'writing',
-            title: 'Writing Task 1: Bar chart — write response + compare to model',
-            description: 'Study a model bar chart answer. Note how data is grouped and compared. Then write your own bar chart response (150+ words, 20 min). Compare your answer to the model: check overview, data selection, and language accuracy.',
+            skill: 'reading',
+            title: 'Reading: Sentence Completion & Diagrams',
+            description: 'Practice skimming passages to locate technical diagrams or summary paragraphs. Master sentence grammar verification.',
             minutes: 50
           },
           {
             id: 'w3d3t2',
-            skill: 'grammar',
-            title: 'Grammar: Comparatives for data description',
-            description: 'Master comparative structures for Task 1: "X was significantly higher than Y", "twice as many as", "the most/least", "whereas X rose, Y declined". Practice writing 10 comparative sentences using data.',
-            minutes: 20
+            skill: 'reading',
+            title: 'Diagram labeling timed practice',
+            description: 'Complete 3 diagram and flowchart labeling questions under strict timed conditions (8 minutes per passage section).',
+            minutes: 25
           },
           {
             id: 'w3d3t3',
-            skill: 'reading',
-            title: 'Read article on environmental topic',
-            description: 'Read a substantive article on an environmental issue (climate change, conservation, pollution). Note topic-specific vocabulary and practice summarizing the key arguments in your own words.',
+            skill: 'vocabulary',
+            title: 'AWL Sublist 3 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 3 using flashcards and matching game modes.',
             minutes: 20
           }
         ]
@@ -469,24 +470,24 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d4t1',
-            skill: 'speaking',
-            title: 'Speaking Part 2: Practice 2 cue cards with 1-min prep',
-            description: 'Practice two Part 2 cue cards. Give yourself exactly 1 minute to prepare notes, then speak for 1.5-2 minutes. Record yourself. Review for fluency, topic coverage, and whether you addressed all bullet points on the card.',
-            minutes: 30
+            skill: 'listening',
+            title: 'Listening: Section 3 Multiple Choice',
+            description: 'Practice Section 3 academic conversations. Learn to identify distractors where speakers change their minds or disagree.',
+            minutes: 40
           },
           {
             id: 'w3d4t2',
-            skill: 'speaking',
-            title: 'Speaking Part 1: Hobbies, daily routine, studies',
-            description: 'Practice answering Part 1 questions on three topics. Expand each answer with the A+R+E technique: Answer the question, give a Reason, provide an Example. Aim for 2-3 sentences per answer.',
+            skill: 'listening',
+            title: 'Audit Section 3 distractors',
+            description: 'Replay Section 3 audio and list out the distractors the speakers used to confuse the listener before agreeing on the final choice.',
             minutes: 25
           },
           {
             id: 'w3d4t3',
             skill: 'grammar',
-            title: 'Grammar: Conditionals mixed practice',
-            description: 'Review and practice all conditional types in context. Complete a mixed exercise with Types 0, 1, 2, and 3. Focus on using conditionals naturally in Speaking Part 3 style answers about hypothetical situations.',
-            minutes: 20
+            title: 'Grammar: Complex Sentences (Relative Clauses)',
+            description: 'Review relative clauses (who, which, that, where) to add details in speaking and writing. Write 10 complex sentences.',
+            minutes: 25
           }
         ]
       },
@@ -496,23 +497,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d5t1',
-            skill: 'reading',
-            title: 'Reading: Matching headings + paragraph matching practice',
-            description: 'Practice 2 passages with matching headings and matching information/features questions. Strategy: read headings first, then skim each paragraph to match. Eliminate obvious matches first.',
-            minutes: 40
+            skill: 'writing',
+            title: 'Writing Task 1: Maps & Process Diagrams',
+            description: 'Study map comparison structures (spatial language, passive voice) and process diagrams (sequencing linkers).',
+            minutes: 45
           },
           {
             id: 'w3d5t2',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 2 continued — 15 words',
-            description: 'Learn 15 more words from AWL Sublist 2. Write each word with its full word family (noun, verb, adjective, adverb forms). Create sentences using different forms of the same word.',
-            minutes: 25
+            skill: 'writing',
+            title: 'Write a full Process report',
+            description: 'Write a full report (150+ words, 20 min) describing a manufacturing process or natural cycle. Focus on sequence connectors.',
+            minutes: 30
           },
           {
             id: 'w3d5t3',
             skill: 'vocabulary',
-            title: 'Topic vocabulary: Health — 15 words',
-            description: 'Learn 15 Health topic words: obesity, sedentary, epidemic, wellbeing, diagnosis, chronic, malnutrition, rehabilitation, vaccination, prevention, fitness, mental health, pharmaceutical, life expectancy, healthcare.',
+            title: 'AWL Sublist 4 — learn 15 words',
+            description: 'Review Sublist 4 vocabulary in the Study Arena. Focus on verbs that show transition or development.',
             minutes: 20
           }
         ]
@@ -523,36 +524,36 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w3d6t1',
-            skill: 'writing',
-            title: 'Writing Task 2: Opinion essay — plan, write, review',
-            description: 'Write a full opinion essay on an IELTS topic (e.g., "Education is the most important factor in the development of a country. To what extent do you agree?"). Plan for 5 min, write for 40 min, review for 10 min.',
-            minutes: 55
+            skill: 'speaking',
+            title: 'Speaking Part 2: Speaking for 2 minutes',
+            description: 'Practice 4 different Speaking Part 2 cards back-to-back. Record all responses. Check if you sound natural and fluent.',
+            minutes: 40
           },
           {
             id: 'w3d6t2',
-            skill: 'writing',
-            title: 'Study PEEL paragraph method',
-            description: 'Learn the PEEL structure for body paragraphs: Point (topic sentence), Explain (elaborate), Example (specific evidence), Link (connect back to thesis). Practice applying this structure to your essay paragraphs.',
-            minutes: 15
+            skill: 'speaking',
+            title: 'Review speaking pace and pronunciation',
+            description: 'Listen to your recordings and write down areas of improvement for pronunciation and intonation.',
+            minutes: 20
           },
           {
             id: 'w3d6t3',
-            skill: 'vocabulary',
-            title: 'Review AWL Sublists 1-2',
-            description: 'Complete review of all words from AWL Sublists 1 and 2. Use flashcards, quizzing, or write a short paragraph using as many AWL words as possible. Identify words still not fully memorized.',
-            minutes: 20
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Analyze mistakes from this week. Write corrections. Practice AWL Sublists 3 and 4 in the Arena.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w3d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Full rest day. Recharge for the final week of Phase 1. Light English exposure is fine but avoid structured IELTS practice.',
+            id: 'w3d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Take a break today. Rest and relax before starting the essay writing phase.',
             minutes: 0
           }
         ]
@@ -561,10 +562,10 @@ export const WEEKS = [
   },
   {
     id: 4,
-    title: 'Strategy Consolidation',
-    phase: 'foundation',
-    phaseLabel: 'Phase 1: Foundation',
-    summary: 'Consolidate all foundation skills with focused practice and take your first full mock test checkpoint.',
+    title: 'Writing Task 2 Essay Types',
+    phase: 'skill-building',
+    phaseLabel: 'Phase 2: Skill Building',
+    summary: 'Master the structure, vocabulary, and time management for all IELTS Writing Task 2 essay types.',
     days: [
       {
         day: 1,
@@ -572,23 +573,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d1t1',
-            skill: 'reading',
-            title: 'Reading: T/F/NG + Y/N/NG focused practice — 2 passages',
-            description: 'Practice 2 passages focusing exclusively on True/False/Not Given and Yes/No/Not Given questions. Remember: T/F/NG tests factual information, Y/N/NG tests the writer\'s opinion. Log every error with the reason.',
+            skill: 'writing',
+            title: 'Writing Task 2: Essay Structures',
+            description: 'Learn the standard 4-paragraph essay structure: Introduction (2 sentences), Body 1 (4-5 sentences), Body 2 (4-5 sentences), Conclusion (2 sentences).',
             minutes: 40
           },
           {
             id: 'w4d1t2',
-            skill: 'grammar',
-            title: 'Grammar: Complex sentences intensive practice',
-            description: 'Write 15 complex sentences using a variety of connectors: although, despite, because, since, while, whereas, provided that, in order to. Mix subordination and coordination. Aim for academic register.',
-            minutes: 25
+            skill: 'writing',
+            title: 'Write an Opinion Essay outline',
+            description: 'Analyze an opinion essay prompt, brainstorm ideas, plan your arguments, and write the introduction and main body topic sentences.',
+            minutes: 30
           },
           {
             id: 'w4d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 3 — learn 15 words',
-            description: 'Begin AWL Sublist 3. Learn 15 new words with full word families, definitions, and example sentences. Sublist 3 includes words like: consent, coordinate, core, corporate, correspond, criteria, deduce, demonstrate, document, dominate.',
+            title: 'AWL Sublist 4 continued — learn 15 words',
+            description: 'Study the remaining words of Sublist 4. Practice spelling using the write practice mode.',
             minutes: 20
           }
         ]
@@ -599,23 +600,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d2t1',
-            skill: 'listening',
-            title: 'Listening: Sections 3-4 focus — academic content',
-            description: 'Practice 2 Section 3 (academic discussion) and 2 Section 4 (academic lecture) exercises. These are the hardest sections. Focus on following the argument, understanding signpost language, and identifying speaker attitudes.',
+            skill: 'speaking',
+            title: 'Speaking Part 3: Abstract Discussion',
+            description: 'Study Part 3 question types (comparing, predicting, assessing). Learn how to discuss abstract societal issues instead of personal examples.',
             minutes: 40
           },
           {
             id: 'w4d2t2',
-            skill: 'listening',
-            title: 'Practice note-taking with abbreviations',
-            description: 'Develop an abbreviation system for note-taking: → for leads to, ↑ for increase, ↓ for decrease, w/ for with, b/c for because, govt for government. Practice taking notes from a 5-minute audio clip using these symbols.',
-            minutes: 20
+            skill: 'speaking',
+            title: 'Practice hedging language',
+            description: 'Learn to use hedging language (e.g., "It is widely believed that...", "This could potentially lead to...", "Generally speaking...") to sound academic.',
+            minutes: 25
           },
           {
             id: 'w4d2t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Society & Crime — 15 words',
-            description: 'Learn 15 Society & Crime words: community, rehabilitation, deterrent, incarceration, legislation, offender, penalty, recidivism, inequality, poverty, discrimination, juvenile, prosecution, surveillance, welfare.',
+            skill: 'speaking',
+            title: 'Practice answering 5 Part 3 questions',
+            description: 'Record yourself answering 5 Part 3 questions. Practice expanding your answers to at least 4-5 sentences per question.',
             minutes: 20
           }
         ]
@@ -626,23 +627,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d3t1',
-            skill: 'writing',
-            title: 'Writing Task 1: Pie chart — write + self-assess',
-            description: 'Write a Task 1 response for a pie chart (or pair of pie charts). Use appropriate language for proportions: "a quarter of", "the majority", "a negligible proportion". After writing, assess yourself against the Band Descriptors.',
+            skill: 'reading',
+            title: 'Reading: Paragraph Matching & Summary',
+            description: 'Learn strategies for locating information in paragraphs and filling summary paragraphs. Complete 2 timed passages.',
             minutes: 50
           },
           {
             id: 'w4d3t2',
-            skill: 'grammar',
-            title: 'Grammar: Review passive voice in academic context',
-            description: 'Review passive voice usage in academic writing. Practice transforming active sentences from your writing into passive where appropriate. Learn when passive is preferred: processes, formal reports, when the agent is unknown.',
-            minutes: 25
+            skill: 'reading',
+            title: 'Review paragraph matching errors',
+            description: 'Identify if errors were caused by not reading carefully or if synonyms in the text confused you.',
+            minutes: 20
           },
           {
             id: 'w4d3t3',
-            skill: 'reading',
-            title: 'Read 1 article and summarize in 3 sentences',
-            description: 'Read a full academic article and write a 3-sentence summary capturing: the main topic, the key argument, and the conclusion. This builds the skill of identifying overall message — crucial for Reading overviews.',
+            skill: 'vocabulary',
+            title: 'AWL Sublist 5 — learn 15 words',
+            description: 'Review Sublist 5 vocabulary in the Study Arena. Focus on words suitable for abstract essay arguments.',
             minutes: 20
           }
         ]
@@ -653,24 +654,24 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d4t1',
-            skill: 'speaking',
-            title: 'Speaking: Full mock interview simulation (Parts 1-3)',
-            description: 'Complete a full 14-minute mock Speaking test. Part 1 (4-5 min): answer questions on 2-3 familiar topics. Part 2 (3-4 min): 1-minute prep + 2-minute talk. Part 3 (4-5 min): discussion questions. Record everything.',
-            minutes: 25
+            skill: 'listening',
+            title: 'Listening: Section 3 Discussions',
+            description: 'Practice Section 3 academic monologues or discussions. Focus on project proposals and teacher-student feedbacks.',
+            minutes: 40
           },
           {
             id: 'w4d4t2',
-            skill: 'speaking',
-            title: 'Record, listen back, identify 3 areas to improve',
-            description: 'Listen to your full mock recording. Note specific moments of hesitation, grammatical errors, limited vocabulary, or unclear pronunciation. Choose your top 3 improvement areas and make a plan for each.',
+            skill: 'listening',
+            title: 'Identify weak listening areas',
+            description: 'Review Section 3 mock scores. Log questions missed due to speed or spelling.',
             minutes: 20
           },
           {
             id: 'w4d4t3',
             skill: 'grammar',
-            title: 'Grammar: Relative clauses review',
-            description: 'Review defining and non-defining relative clauses. Practice embedding them naturally in speaking and writing. Complete mixed exercises and write 5 complex sentences using relative clauses in academic contexts.',
-            minutes: 20
+            title: 'Grammar: Conditional Sentences',
+            description: 'Review 1st, 2nd, and 3rd conditional sentences (e.g., "If governments invest in renewable energy, emissions will decline..."). Write 10 conditionals.',
+            minutes: 30
           }
         ]
       },
@@ -680,23 +681,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d5t1',
-            skill: 'reading',
-            title: 'Reading: Sentence completion + summary completion practice',
-            description: 'Practice 2 passages with sentence completion and summary completion questions. Strategy: identify keywords in the question, scan for synonyms/paraphrases in the passage, check grammatical fit of your answer.',
-            minutes: 40
+            skill: 'writing',
+            title: 'Writing Task 2: Problem/Solution & Discussion',
+            description: 'Study the structural layouts for both Discussion (discuss both views + opinion) and Problem/Solution essay types.',
+            minutes: 45
           },
           {
             id: 'w4d5t2',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 3 continued — 15 words',
-            description: 'Learn 15 more words from AWL Sublist 3. Review and test yourself on previous words first. Create mind maps connecting related AWL words across sublists.',
-            minutes: 25
+            skill: 'writing',
+            title: 'Write a full opinion essay',
+            description: 'Write a full essay (250+ words, 40 min) on a given topic under strict timing. Focus on linking words and vocabulary range.',
+            minutes: 40
           },
           {
             id: 'w4d5t3',
             skill: 'vocabulary',
-            title: 'Month 1 vocabulary review — quiz all words',
-            description: 'Comprehensive review of all vocabulary learned in Month 1: AWL Sublists 1-3 and topic vocabulary (Education, Technology, Environment, Health, Society & Crime). Use flashcards or self-quizzing. Aim for 80%+ recall.',
+            title: 'AWL Sublist 5 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 5 using flashcard and multiple choice quiz modes.',
             minutes: 20
           }
         ]
@@ -707,43 +708,48 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w4d6t1',
-            skill: 'reading',
-            title: 'MONTH 1 CHECKPOINT: Full mock test — all 4 skills',
-            description: 'Complete a full IELTS mock test under exam conditions: Listening (30 min), Reading (60 min), Writing (60 min), Speaking (14 min). No breaks between Listening and Reading. Time everything strictly.',
-            minutes: 180
+            skill: 'speaking',
+            title: 'Speaking Part 3: Structuring responses',
+            description: 'Practice answering 10 difficult Part 3 questions. Use structure linkers: "Firstly...", "This is because...", "For example...", "Therefore...".',
+            minutes: 40
           },
           {
             id: 'w4d6t2',
-            skill: 'writing',
-            title: 'Score yourself and update error log',
-            description: 'Score your Listening and Reading tests. Self-assess your Writing using Band Descriptors. Record all scores and compare with Week 1 diagnostic. Update your error log with every mistake. Note improvements and remaining weaknesses.',
+            skill: 'speaking',
+            title: 'Review speaking vocabulary range',
+            description: 'Analyze your recorded vocabulary choices. Replace common words (good, bad, very) with advanced synonyms (beneficial, detrimental, exceptionally).',
+            minutes: 25
+          },
+          {
+            id: 'w4d6t3',
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Update your mistake log. Run a vocabulary match game to test AWL Sublists 4 and 5.',
             minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w4d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest and recover after your first full mock test. Reflect on your progress over the past month. Phase 2 starts tomorrow — well done on completing the foundation!',
+            id: 'w4d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Rest and recharge before moving into the skills integration and checkpoint week.',
             minutes: 0
           }
         ]
       }
     ]
   },
-
-  // ===== PHASE 2: SKILLS DEVELOPMENT (Weeks 5-8) ============================
   {
     id: 5,
-    title: 'Reading & Listening Intensity',
-    phase: 'development',
-    phaseLabel: 'Phase 2: Skills Development',
-    summary: 'Intensify Reading and Listening practice with timed conditions and detailed error analysis.',
+    title: 'Skill Integration & Checkpoint',
+    phase: 'skill-building',
+    phaseLabel: 'Phase 2: Skill Building',
+    summary: 'Integrate all skills under timed practice conditions and take a mid-course diagnostic test.',
     days: [
       {
         day: 1,
@@ -751,24 +757,24 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d1t1',
-            skill: 'reading',
-            title: 'Reading: 2 full passages — 20-min timing each',
-            description: 'Complete 2 reading passages with mixed question types, strictly timing yourself to 20 minutes per passage. This builds speed and exam pressure tolerance. Review answers and note time management.',
+            skill: 'writing',
+            title: 'Writing Task 2: Advantages & Disadvantages',
+            description: 'Study essay layouts for advantages/disadvantages and two-part questions. Practice structuring body paragraphs.',
             minutes: 45
           },
           {
             id: 'w5d1t2',
-            skill: 'reading',
-            title: 'Study scanning technique for detail questions',
-            description: 'Practice the scanning technique: identify keywords in the question, predict synonyms, then scan the passage quickly for those words or paraphrases. Do not read the whole passage — go straight to the relevant section.',
-            minutes: 15
+            skill: 'writing',
+            title: 'Write a full Advantages/Disadvantages essay',
+            description: 'Write a full essay (250+ words, 40 min) strictly timed. Self-assess against lexical resource and coherence criteria.',
+            minutes: 40
           },
           {
             id: 'w5d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 4 — learn 15 words',
-            description: 'Start AWL Sublist 4. Learn 15 new words including: access, adequate, annual, apparent, approximate, attitude, attribute, civil, code, commit. Write definitions, word families, and example sentences.',
-            minutes: 25
+            title: 'AWL Sublist 6 — learn 15 words',
+            description: 'Review Sublist 6 vocabulary in the Study Arena. Focus on collocations for writing body paragraphs.',
+            minutes: 20
           }
         ]
       },
@@ -778,23 +784,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d2t1',
-            skill: 'listening',
-            title: 'Listening: Full practice test',
-            description: 'Complete a full IELTS Listening test (all 4 sections) under exam conditions. Do not pause or replay. Focus on prediction before each section plays and careful answer transfer.',
-            minutes: 40
+            skill: 'speaking',
+            title: 'Speaking: Full timed mock test',
+            description: 'Record yourself completing a full Speaking interview (Parts 1, 2, and 3) under strict timing. Score yourself honestly.',
+            minutes: 35
           },
           {
             id: 'w5d2t2',
-            skill: 'listening',
-            title: 'Focus on Section 3 distractors analysis',
-            description: 'Review your Section 3 answers. Identify any questions where you were tricked by distractors (wrong answers mentioned before the correct one). Learn to listen for correction language: "actually", "I mean", "well, on second thought".',
+            skill: 'speaking',
+            title: 'Focus on Part 3 abstract transitions',
+            description: 'Review transition phrases and hedging. Practice speaking on 5 abstract topics.',
             minutes: 20
           },
           {
             id: 'w5d2t3',
             skill: 'vocabulary',
-            title: 'Topic vocabulary: Globalization — 15 words',
-            description: 'Learn 15 Globalization words: outsourcing, multinational, trade, tariff, export, import, cultural exchange, migration, integration, sovereignty, interdependence, free trade, supply chain, developing nations, economic growth.',
+            title: 'AWL Sublist 6 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 6 using spelling and matching game modes.',
             minutes: 20
           }
         ]
@@ -805,23 +811,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d3t1',
-            skill: 'vocabulary',
-            title: 'Writing Task 1: Trend vocabulary mastery',
-            description: 'Master all trend vocabulary: rise/increase/climb/surge/soar (up), decline/decrease/fall/drop/plummet (down), remain steady/plateau/stabilize (flat), fluctuate (up and down). Learn adverb pairs: sharply/dramatically, gradually/steadily, slightly/marginally.',
-            minutes: 20
+            skill: 'reading',
+            title: 'Reading: Full timed passage practice',
+            description: 'Complete a full Reading test section (3 passages, 40 questions, 60 minutes) under strict timed conditions.',
+            minutes: 65
           },
           {
             id: 'w5d3t2',
-            skill: 'writing',
-            title: 'Write Task 1 using trend words — line graph',
-            description: 'Write a Task 1 line graph response using as many trend words as possible. Aim for variety — don\'t repeat the same verb or adverb. Include an overview highlighting the most significant trends.',
-            minutes: 40
+            skill: 'reading',
+            title: 'Detailed Reading error review',
+            description: 'Identify question types causing errors. Log synonyms missed and record them in your error log.',
+            minutes: 30
           },
           {
             id: 'w5d3t3',
-            skill: 'grammar',
-            title: 'Grammar: Comparatives and superlatives for Task 1',
-            description: 'Practice using comparative structures in data description: "more than twice as many", "the highest proportion", "considerably fewer than", "by far the most significant". Write 10 sentences describing data using these structures.',
+            skill: 'vocabulary',
+            title: 'AWL Sublist 7 — learn 15 words',
+            description: 'Review Sublist 7 vocabulary in the Study Arena. Focus on academic verbs.',
             minutes: 20
           }
         ]
@@ -832,23 +838,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d4t1',
-            skill: 'speaking',
-            title: 'Speaking Part 2: Record 3 cue card responses',
-            description: 'Practice 3 different Part 2 cue cards. For each: 1 minute preparation, 2 minutes speaking. Record all three. Topics should vary: describe a person, a place, and an experience. Use descriptive vocabulary.',
-            minutes: 25
+            skill: 'listening',
+            title: 'Listening: Section 4 Academic Lecture',
+            description: 'Practice Section 4 academic monologues. Learn how to track lectures using outline structures and notes.',
+            minutes: 40
           },
           {
             id: 'w5d4t2',
-            skill: 'speaking',
-            title: 'Self-evaluate fluency, vocabulary, grammar',
-            description: 'Listen to your recordings and evaluate against the 4 Speaking criteria. Score yourself 1-9 for each criterion. Note specific examples of good language use and areas needing improvement.',
-            minutes: 15
+            skill: 'listening',
+            title: 'Section 4 speed spelling drills',
+            description: 'Practice spelling technical words dictations. Focus on spelling accuracy at high audio speeds.',
+            minutes: 25
           },
           {
             id: 'w5d4t3',
-            skill: 'speaking',
-            title: 'Speaking Part 3: Practice answer→explain→example formula',
-            description: 'Practice Part 3 abstract questions using the formula: State your answer, Explain why, Give an example. Practice 5 questions on topics like education policy, environmental responsibility, and technology in society.',
+            skill: 'grammar',
+            title: 'Grammar: Complex Linking Words',
+            description: 'Review connectors showing contrast or concession (e.g., "whereas", "although", "nevertheless", "despite"). Write 10 complex sentences.',
             minutes: 25
           }
         ]
@@ -859,23 +865,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d5t1',
-            skill: 'reading',
-            title: 'Reading: Paragraph matching intensive — 2 passages',
-            description: 'Practice matching information to paragraphs and matching features questions. These require you to scan the entire passage. Strategy: read the questions first, identify unique keywords, then scan each paragraph systematically.',
-            minutes: 40
+            skill: 'writing',
+            title: 'Writing: Timed Task 1 & 2 Combined',
+            description: 'Write both a Task 1 (visual, 20 min) and Task 2 (essay, 40 min) back-to-back under strict timed conditions (60 minutes total).',
+            minutes: 60
           },
           {
             id: 'w5d5t2',
-            skill: 'grammar',
-            title: 'Grammar: Passive voice in academic reports',
-            description: 'Practice using passive voice naturally in academic writing contexts: "The study was conducted by...", "It has been argued that...", "The results were analysed using...". Write 10 sentences in academic passive.',
-            minutes: 20
+            skill: 'writing',
+            title: 'Self-assess writing mock tests',
+            description: 'Score your writing against task response and lexical resource band descriptors. Identify any remaining weaknesses.',
+            minutes: 30
           },
           {
             id: 'w5d5t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 4 continued — 15 words',
-            description: 'Learn 15 more words from AWL Sublist 4. Review all Sublist 4 words learned so far. Write a short paragraph (100 words) using at least 8 AWL Sublist 4 words.',
+            title: 'AWL Sublist 7 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 7 using flashcard and multiple choice quiz modes.',
             minutes: 20
           }
         ]
@@ -886,41 +892,49 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w5d6t1',
-            skill: 'listening',
-            title: 'Listening: 2 practice tests back-to-back',
-            description: 'Build stamina by completing 2 full Listening tests in succession (approximately 60 minutes of audio total). This simulates the concentration demands of exam day. Score both tests.',
-            minutes: 80
+            skill: 'general',
+            title: 'MID-COURSE CHECKPOINT: Full Mock Test',
+            description: 'Take a complete IELTS mock test (Reading, Listening, Writing, and Speaking) under strict exam conditions. Record your band score.',
+            minutes: 170
           },
           {
             id: 'w5d6t2',
-            skill: 'listening',
-            title: 'Error analysis — log all mistakes',
-            description: 'Carefully analyze all errors from both tests. Look for patterns: are most mistakes in Sections 3-4? Are they spelling errors? Distractor traps? Missed signpost language? Update your error log with findings.',
-            minutes: 20
+            skill: 'general',
+            title: 'Score and compare progress',
+            description: 'Compare this mock test score to your Diagnostic (Week 1) results. Log improvements and identify areas to target during Phase 3.',
+            minutes: 30
+          },
+          {
+            id: 'w5d6t3',
+            skill: 'general',
+            title: 'Weekly error log audit & update',
+            description: 'Review and update your error log with insights from the mock test. Test yourself in the Arena on AWL Sublists 6 and 7.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w5d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest and recharge. Light English exposure through entertainment is fine. Let your brain consolidate this week\'s intensive practice.',
+            id: 'w5d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Rest and relax. Prepare mentally for the transition into Phase 3: Exam Mastery next week.',
             minutes: 0
           }
         ]
       }
     ]
   },
+  // ===== PHASE 3: EXAM MASTERY (Weeks 6-8) ===================================
   {
     id: 6,
-    title: 'Balanced Skills Push',
-    phase: 'development',
-    phaseLabel: 'Phase 2: Skills Development',
-    summary: 'Push all four skills forward with balanced practice, essay writing, and first timed Reading test.',
+    title: 'Intensive Mock Testing',
+    phase: 'exam-mastery',
+    phaseLabel: 'Phase 3: Exam Mastery',
+    summary: 'Transition into exam conditions with full-length timed practice tests and detailed error audits.',
     days: [
       {
         day: 1,
@@ -929,22 +943,22 @@ export const WEEKS = [
           {
             id: 'w6d1t1',
             skill: 'reading',
-            title: 'Reading: Sentence completion + summary completion',
-            description: 'Practice 2 passages focusing on sentence completion and summary completion with a word list. Strategy: predict the word type (noun/verb/adjective) before searching the passage. Check grammar fit carefully.',
-            minutes: 40
+            title: 'Reading: Full timed test',
+            description: 'Complete a full Reading test under strict exam conditions (3 passages, 40 questions, 60 minutes). Do not use helpers.',
+            minutes: 65
           },
           {
             id: 'w6d1t2',
-            skill: 'grammar',
-            title: 'Grammar: "It is widely believed that..." structures',
-            description: 'Master impersonal academic structures: "It is widely believed/argued/acknowledged that...", "There is growing evidence to suggest that...", "It is worth noting that...". Practice using these in essay introductions.',
-            minutes: 25
+            skill: 'reading',
+            title: 'Detailed Reading test analysis',
+            description: 'Analyze every incorrect answer. Record reasons (distraction, speed, synonym mismatch) in your error log.',
+            minutes: 35
           },
           {
             id: 'w6d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 5 — learn 15 words',
-            description: 'Begin AWL Sublist 5 with 15 new words. Include words like: academic, adjust, alter, amend, aware, capacity, challenge, clause, compound, conflict. Focus on both meaning and pronunciation.',
+            title: 'AWL Sublist 8 — learn 15 words',
+            description: 'Review Sublist 8 vocabulary in the Study Arena. Focus on academic nouns.',
             minutes: 20
           }
         ]
@@ -956,22 +970,22 @@ export const WEEKS = [
           {
             id: 'w6d2t1',
             skill: 'listening',
-            title: 'Listening: Section 4 academic lecture practice x2',
-            description: 'Complete 2 Section 4 exercises (academic lectures). These are the hardest sections with no pauses. Practice identifying the lecture structure, signpost language ("Moving on to...", "The key point here is..."), and main ideas.',
+            title: 'Listening: Full timed test',
+            description: 'Complete a full Listening test. Limit audio replays. Record your score.',
             minutes: 40
           },
           {
             id: 'w6d2t2',
             skill: 'listening',
-            title: 'Note-taking: abbreviation and symbol practice',
-            description: 'Practice taking notes from a lecture or podcast using abbreviations and symbols. Develop your personal shorthand system. Then convert your notes back to full sentences to check comprehension.',
-            minutes: 20
+            title: 'Analyze listening error logs',
+            description: 'Identify question types causing issues. Practice those specific types using targeted exercises.',
+            minutes: 25
           },
           {
             id: 'w6d2t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Work & Employment — 15 words',
-            description: 'Learn 15 Work & Employment words: unemployment, recruitment, promotion, entrepreneurship, freelance, workforce, salary, occupational, resigned, redundancy, career prospects, internship, work-life balance, pension, productivity.',
+            skill: 'listening',
+            title: 'Section 4 speed mock practice',
+            description: 'Listen to Section 4 lectures at 1.1x or 1.2x speed to build adaptation and quick note-taking.',
             minutes: 20
           }
         ]
@@ -983,23 +997,23 @@ export const WEEKS = [
           {
             id: 'w6d3t1',
             skill: 'writing',
-            title: 'Writing Task 1: Process diagram using passive voice',
-            description: 'Study a model process diagram answer. Note heavy use of passive voice and sequencing language. Write your own process diagram response: describe each stage clearly, use passive voice, include sequencing connectors.',
-            minutes: 50
+            title: 'Writing Task 1 & 2 Timed Combined',
+            description: 'Write both a Task 1 (20 min) and Task 2 (40 min) back-to-back under strict timed conditions.',
+            minutes: 60
           },
           {
             id: 'w6d3t2',
             skill: 'writing',
-            title: 'Writing: Sequencing language practice',
-            description: 'Master sequencing language for process descriptions: "The process begins when...", "Subsequently...", "Following this...", "At the next stage...", "The final stage involves...". Write 10 sentences using different sequencing expressions.',
-            minutes: 15
+            title: 'Analyze writing mock performance',
+            description: 'Compare your essays to Band 8 sample answers. Self-correct grammar errors using your log.',
+            minutes: 30
           },
           {
             id: 'w6d3t3',
-            skill: 'reading',
-            title: 'Read model process descriptions',
-            description: 'Read 2-3 model Band 8+ process diagram descriptions. Analyze the structure: introduction (paraphrase), overview (main stages), detail paragraphs. Note the passive voice usage and sequencing language.',
-            minutes: 15
+            skill: 'vocabulary',
+            title: 'AWL Sublist 8 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 8 using matching and spelling game modes.',
+            minutes: 20
           }
         ]
       },
@@ -1010,22 +1024,22 @@ export const WEEKS = [
           {
             id: 'w6d4t1',
             skill: 'speaking',
-            title: 'Speaking: Full 3-part mock with recording',
-            description: 'Complete a full Speaking mock test (all 3 parts, 14 minutes). Record the entire session. Try to use a range of grammatical structures: conditionals, passive voice, relative clauses, and complex sentences.',
-            minutes: 20
+            title: 'Speaking: Full mock with tutor or partner',
+            description: 'Record yourself completing a full Speaking mock interview with an online tool or partner. Score yourself.',
+            minutes: 30
           },
           {
             id: 'w6d4t2',
             skill: 'speaking',
-            title: 'Review recording — check grammar range',
-            description: 'Listen to your recording and count the variety of grammar structures used. Did you use past, present, and future tenses? Conditionals? Passive voice? Complex sentences? Note which structures you avoided.',
-            minutes: 15
+            title: 'Fluency audit: Pause patterns',
+            description: 'Listen to the recording. Audit pauses. Practice re-phrasing answers without long hesitations.',
+            minutes: 20
           },
           {
             id: 'w6d4t3',
             skill: 'speaking',
-            title: 'Practice hedging language',
-            description: 'Learn and practice hedging expressions for Part 3: "It depends on...", "Generally speaking...", "To a certain extent...", "It\'s debatable whether...", "I would argue that...". Practice 5 Part 3 questions using these expressions.',
+            title: 'Part 3 complex topic discussions',
+            description: 'Practice discussing 5 complex abstract topics (e.g., technology ethics, globalization, resource distributions).',
             minutes: 25
           }
         ]
@@ -1037,22 +1051,22 @@ export const WEEKS = [
           {
             id: 'w6d5t1',
             skill: 'reading',
-            title: 'Reading: Full timed test — 3 passages, 60 minutes',
-            description: 'Complete a full IELTS Reading test under strict exam timing (60 minutes for 3 passages). Practice time management: aim for 20 minutes per passage. Don\'t spend too long on any single question. Guess if needed.',
-            minutes: 65
+            title: 'Reading: Speed and timing drills',
+            description: 'Complete 3 Reading passages back-to-back. Restrict time to 18 minutes per passage to build buffer time.',
+            minutes: 55
           },
           {
             id: 'w6d5t2',
-            skill: 'reading',
-            title: 'Analyze errors and update error log',
-            description: 'Review every incorrect answer. For each, identify the question type, the passage location of the answer, and why you got it wrong. Update your error log. Look for patterns across all your reading errors.',
-            minutes: 15
+            skill: 'listening',
+            title: 'Listening: Section 3 and 4 mock tests',
+            description: 'Complete 3 sets of Section 3 & 4 tests. Score and log mistakes.',
+            minutes: 35
           },
           {
             id: 'w6d5t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 5 continued',
-            description: 'Learn 15 more AWL Sublist 5 words. Review all Sublist 5 words. Write example sentences using academic contexts. Test yourself on previous sublists to maintain retention.',
+            title: 'AWL Sublist 9 — learn 15 words',
+            description: 'Review Sublist 9 vocabulary in the Study Arena. Focus on collocations.',
             minutes: 20
           }
         ]
@@ -1063,36 +1077,36 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w6d6t1',
-            skill: 'writing',
-            title: 'Writing Task 2: Discussion essay (both views)',
-            description: 'Write a full discussion essay: "Some people think that... Others believe that... Discuss both views and give your own opinion." Plan your essay structure, write 250+ words in 40 minutes, then review.',
-            minutes: 55
+            skill: 'general',
+            title: 'Full Mock Exam (Reading & Listening)',
+            description: 'Complete Reading and Listening tests back-to-back. Score and log mistakes in your log.',
+            minutes: 105
           },
           {
             id: 'w6d6t2',
-            skill: 'writing',
-            title: 'Get feedback on essay',
-            description: 'Share your essay with a study partner, tutor, or online community (Reddit r/IELTS, IELTS forums) for feedback. If no one is available, compare your essay carefully against model answers and band descriptors.',
-            minutes: 15
+            skill: 'general',
+            title: 'Full Mock Exam (Writing & Speaking)',
+            description: 'Write both Task 1 & Task 2, and complete a full recorded Speaking interview. Compare scores.',
+            minutes: 90
           },
           {
             id: 'w6d6t3',
-            skill: 'vocabulary',
-            title: 'Review all topic vocabulary so far',
-            description: 'Review all topic vocabulary learned: Education, Technology, Environment, Health, Society & Crime, Globalization, Work & Employment. Quiz yourself on definitions and use weak words in new sentences.',
-            minutes: 20
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Compile insights from this week\'s tests. Test yourself on AWL Sublists 8 and 9 in the Arena.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w6d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest day. You\'re halfway through the program! Reflect on your progress and celebrate the work you\'ve done so far.',
+            id: 'w6d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Rest and relax. Re-energize for the final weak area targetings next week.',
             minutes: 0
           }
         ]
@@ -1101,10 +1115,10 @@ export const WEEKS = [
   },
   {
     id: 7,
-    title: 'Writing & Speaking Refinement',
-    phase: 'development',
-    phaseLabel: 'Phase 2: Skills Development',
-    summary: 'Refine Writing with maps and problem/solution essays. Develop advanced speaking structures and collocations.',
+    title: 'Weakness Targeting & Error Audit',
+    phase: 'exam-mastery',
+    phaseLabel: 'Phase 3: Exam Mastery',
+    summary: 'Audit your error log, target your weakest question types, and refine your time management strategy.',
     days: [
       {
         day: 1,
@@ -1112,23 +1126,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w7d1t1',
-            skill: 'writing',
-            title: 'Writing Task 1: Map comparison — before/after',
-            description: 'Write a Task 1 response comparing two maps (before and after development). Use spatial language: "adjacent to", "overlooking", "in the vicinity of", "to the north/south". Describe changes clearly using passive voice.',
+            skill: 'reading',
+            title: 'Reading: Focus on weakest question types',
+            description: 'Identify your 2 weakest question types from your log (e.g., TFNG, Paragraph Matching). Do 20 targeted practice exercises.',
             minutes: 50
           },
           {
             id: 'w7d1t2',
-            skill: 'vocabulary',
-            title: 'Study spatial language for maps',
-            description: 'Master spatial vocabulary: adjacent to, overlooking, in the vicinity of, to the north/south/east/west, opposite, next to, surrounded by, located on the outskirts, in the heart of, on the corner of. Practice with a simple map.',
-            minutes: 15
+            skill: 'reading',
+            title: 'Sync reading errors with strategies',
+            description: 'Read the specific strategies guides matching your weakest question types. Practice those techniques.',
+            minutes: 30
           },
           {
             id: 'w7d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 6 — learn 15 words',
-            description: 'Begin AWL Sublist 6. Learn 15 words including: abstract, accurate, acknowledge, aggregate, allocate, assign, attach, author, bond, brief. Write definitions, example sentences, and word families.',
+            title: 'AWL Sublist 9 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 9 using matching and spelling game modes.',
             minutes: 20
           }
         ]
@@ -1140,23 +1154,23 @@ export const WEEKS = [
           {
             id: 'w7d2t1',
             skill: 'listening',
-            title: 'Listening: Note/summary completion focused practice',
-            description: 'Practice note completion and summary completion questions from all sections. Focus on predicting word types, listening for paraphrases, and spelling accuracy. Complete 4 exercises.',
-            minutes: 35
+            title: 'Listening: Section 4 dictation drills',
+            description: 'Complete 3 Section 4 tests focusing on note completion. Audit letters capitalization and number spellings.',
+            minutes: 40
           },
           {
             id: 'w7d2t2',
-            skill: 'grammar',
-            title: 'Grammar: Cleft sentences',
-            description: 'Learn cleft sentences for emphasis: "What concerns me most is...", "It is education that plays the most crucial role", "What many people fail to realize is...". Practice using these in essay introductions and Speaking Part 3.',
+            skill: 'listening',
+            title: 'Target weakest listening question types',
+            description: 'Review error log. Practice map labeling or multiple choice questions if they are your weak areas.',
             minutes: 25
           },
           {
             id: 'w7d2t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Media & Arts — 15 words',
-            description: 'Learn 15 Media & Arts words: broadcasting, censorship, tabloid, journalism, social media, propaganda, exhibition, contemporary, heritage, masterpiece, genre, curator, performance, literature, creative.',
-            minutes: 20
+            skill: 'grammar',
+            title: 'Grammar: Advanced structures review',
+            description: 'Review inversion (e.g., "Not only did they...") and passive voice. Practice using them in Writing essays.',
+            minutes: 25
           }
         ]
       },
@@ -1167,22 +1181,22 @@ export const WEEKS = [
           {
             id: 'w7d3t1',
             skill: 'writing',
-            title: 'Writing Task 2: Problem/Solution essay',
-            description: 'Write a problem/solution essay: identify 2-3 problems, propose concrete solutions for each, and evaluate which solution is most effective. Use clear topic sentences and supporting evidence. Aim for 280+ words.',
+            title: 'Writing: Rewrite previous weak essays',
+            description: 'Select 2 previously written essays where you scored below Band 7. Rewrite them incorporating feedback and corrections.',
             minutes: 55
           },
           {
             id: 'w7d3t2',
-            skill: 'grammar',
-            title: 'Grammar: Inversion structures',
-            description: 'Learn inversions for academic emphasis: "Not only does... but also...", "Rarely do we see...", "Under no circumstances should...", "Only by... can we...". Practice using these in essay body paragraphs. They impress examiners.',
-            minutes: 15
+            skill: 'writing',
+            title: 'Timed Task 1 maps or processes',
+            description: 'Write a full maps or processes report in 20 minutes. Focus on sequence markers and passive verbs.',
+            minutes: 30
           },
           {
             id: 'w7d3t3',
-            skill: 'reading',
-            title: 'Read 1 article on social media topic',
-            description: 'Read a substantial article about social media\'s impact on society, privacy, or communication. Note topic-specific vocabulary and arguments. Practice summarizing the key points in your own words.',
+            skill: 'vocabulary',
+            title: 'AWL Sublist 10 — learn 15 words',
+            description: 'Review Sublist 10 vocabulary in the Study Arena. Focus on advanced academic terms.',
             minutes: 20
           }
         ]
@@ -1194,23 +1208,23 @@ export const WEEKS = [
           {
             id: 'w7d4t1',
             skill: 'speaking',
-            title: 'Speaking Part 3: Abstract discussion practice — 5 questions',
-            description: 'Practice 5 Part 3 abstract discussion questions on topics like education policy, technology\'s role in society, and environmental responsibility. Use the answer→explain→example structure. Record and review.',
-            minutes: 30
+            title: 'Speaking: Fluency and pronunciation drills',
+            description: 'Record yourself answering Part 2 and Part 3 questions. Audit pauses, fillers, and word pronunciations.',
+            minutes: 40
           },
           {
             id: 'w7d4t2',
             skill: 'speaking',
-            title: 'Practice advanced grammar in speaking',
-            description: 'Deliberately practice using advanced grammar in your speaking: mixed conditionals ("If I had studied harder, I would be more confident now"), passive ("It has been suggested that..."), and cleft sentences. Record 5 responses.',
-            minutes: 20
+            title: 'Vocabulary expansion speaking practice',
+            description: 'Practice answering Speaking questions using advanced AWL terms you learned. Focus on collocations.',
+            minutes: 25
           },
           {
             id: 'w7d4t3',
             skill: 'grammar',
-            title: 'Grammar: Participle clauses',
-            description: 'Learn participle clauses for sophisticated writing: "Having considered all the evidence...", "Based on recent research...", "Faced with increasing pressure...". Practice transforming relative clauses into participle clauses.',
-            minutes: 20
+            title: 'Grammar: Sentence variety drills',
+            description: 'Practice combining simple sentences into compound or complex sentences. Verify grammatical accuracy.',
+            minutes: 25
           }
         ]
       },
@@ -1220,23 +1234,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w7d5t1',
-            skill: 'reading',
-            title: 'Reading: Y/N/NG + mixed question types practice',
-            description: 'Practice Yes/No/Not Given questions mixed with other question types. For Y/N/NG: find the writer\'s opinion/claim, not just facts. If the passage doesn\'t address the point, it\'s Not Given. Complete 2 passages.',
-            minutes: 40
+            skill: 'general',
+            title: 'Full Mock Test: All 4 Skills',
+            description: 'Take a complete IELTS mock test strictly timed. Record your scores and verify if they are consistent.',
+            minutes: 170
           },
           {
             id: 'w7d5t2',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 6 continued + review',
-            description: 'Learn 15 more AWL Sublist 6 words. Review all Sublist 6 words and test yourself. Write a short academic paragraph using at least 8 Sublist 6 words.',
-            minutes: 25
+            skill: 'general',
+            title: 'Detailed Mock Exam analysis',
+            description: 'Score and evaluate your mock test. Update your error log with final weakness insights.',
+            minutes: 30
           },
           {
             id: 'w7d5t3',
             skill: 'vocabulary',
-            title: 'Collocation practice — 20 common academic collocations',
-            description: 'Learn 20 common academic collocations: conduct research, reach a conclusion, raise awareness, pose a threat, play a vital role, have a profound impact, take measures, draw attention, gain insight, shed light on.',
+            title: 'AWL Sublist 10 continued — learn 15 words',
+            description: 'Master the remaining words of Sublist 10 using multiple choice quiz and matching games.',
             minutes: 20
           }
         ]
@@ -1247,29 +1261,36 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w7d6t1',
-            skill: 'listening',
-            title: 'Full mock Listening + Reading test',
-            description: 'Complete a full Listening test followed immediately by a full Reading test (total ~100 minutes). This simulates the first half of the IELTS exam. Practice maintaining concentration over the full duration.',
-            minutes: 100
+            skill: 'general',
+            title: 'Error Log Audit: Top 10 mistakes',
+            description: 'Go through your entire error log. Compile a list of your top 10 recurring mistakes. Write down a concrete prevention plan for each.',
+            minutes: 45
           },
           {
             id: 'w7d6t2',
-            skill: 'reading',
-            title: 'Error analysis + pattern identification',
-            description: 'Score both tests and analyze all errors. Look for patterns across both skills. Are there common themes? Update your error log and identify the top 3 recurring issues to address next week.',
-            minutes: 20
+            skill: 'general',
+            title: 'Collocation and synonym review',
+            description: 'Review your personal collocation lists and synonym sheets compiled during reading practice.',
+            minutes: 30
+          },
+          {
+            id: 'w7d6t3',
+            skill: 'general',
+            title: 'Weekly error log audit & review',
+            description: 'Final review of this week\'s weak area results. Test yourself in the Arena on all AWL Sublists.',
+            minutes: 30
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w7d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Full rest day. One more week until your Month 2 checkpoint. Relax and let your brain consolidate all the skills you\'ve been building.',
+            id: 'w7d7t1',
+            skill: 'general',
+            title: 'Rest Day',
+            description: 'Relax. Re-energize for your final preparation week.',
             minutes: 0
           }
         ]
@@ -1278,10 +1299,10 @@ export const WEEKS = [
   },
   {
     id: 8,
-    title: 'Peak Development',
-    phase: 'development',
-    phaseLabel: 'Phase 2: Skills Development',
-    summary: 'Push to peak development with advanced techniques, speed training, and Month 2 full mock test.',
+    title: 'Final Simulation & Exam Prep',
+    phase: 'exam-mastery',
+    phaseLabel: 'Phase 3: Exam Mastery',
+    summary: 'Complete your final exam simulations, review high-yield flashcards, and prepare mentally for the test day.',
     days: [
       {
         day: 1,
@@ -1289,23 +1310,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w8d1t1',
-            skill: 'writing',
-            title: 'Writing Task 1: Table with complex data',
-            description: 'Write a Task 1 response for a table with multiple categories and time periods. Practice selecting the most significant data to report (you cannot describe everything). Write a clear overview and group your data logically.',
-            minutes: 50
+            skill: 'general',
+            title: 'Final Mock Exam: Timed',
+            description: 'Complete a full-length IELTS test (Reading, Listening, Writing) under strict exam conditions. Record scores.',
+            minutes: 160
           },
           {
             id: 'w8d1t2',
-            skill: 'grammar',
-            title: 'Grammar: Nominalization practice',
-            description: 'Practice nominalization (turning verbs/adjectives into nouns) for more academic writing: "people consume → consumption", "the economy grew → economic growth", "the government decided → the government\'s decision". Convert 15 sentences.',
-            minutes: 20
+            skill: 'general',
+            title: 'Final Mock Exam score and review',
+            description: 'Analyze any mistakes. Focus on confirming why you made them and make a note to avoid them on the real test.',
+            minutes: 30
           },
           {
             id: 'w8d1t3',
             skill: 'vocabulary',
-            title: 'AWL Sublist 7 — learn 15 words',
-            description: 'Begin AWL Sublist 7. Learn 15 words with full word families, definitions, and example sentences. Test yourself on previous sublists first to maintain cumulative knowledge.',
+            title: 'High-Yield Vocabulary review',
+            description: 'Review your personal list of weak words. Practice matching them in the Arena.',
             minutes: 20
           }
         ]
@@ -1316,23 +1337,23 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w8d2t1',
-            skill: 'listening',
-            title: 'Listening: Practice at 1.25x speed',
-            description: 'Listen to 2 practice sections at 1.25x speed. This builds your ear for natural conversation speed and makes normal IELTS audio feel slower. Don\'t worry about getting everything — focus on catching key information.',
-            minutes: 30
+            skill: 'reading',
+            title: 'Reading: Light maintenance practice',
+            description: 'Complete 1 Reading passage timed. Focus on applying skimming/scanning strategies smoothly.',
+            minutes: 25
           },
           {
             id: 'w8d2t2',
             skill: 'listening',
-            title: 'Then practice at normal speed',
-            description: 'Immediately follow up with 2 more sections at normal speed. Notice how much easier it feels after the 1.25x practice. This contrast training rapidly improves your listening comprehension.',
+            title: 'Listening: Light maintenance practice',
+            description: 'Complete 1 Listening test section. Focus on Section 4 notes spelling accuracy.',
             minutes: 20
           },
           {
             id: 'w8d2t3',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary: Transportation & Culture — 15 words',
-            description: 'Learn 15 Transportation & Culture words: congestion, infrastructure, commute, pedestrian, emission, public transit, heritage, tradition, diversity, ceremony, cuisine, indigenous, custom, assimilation, multicultural.',
+            skill: 'general',
+            title: 'Error log review: Prevention plan',
+            description: 'Review your top 10 mistakes list and the prevention plan you wrote. Visualize avoiding them.',
             minutes: 20
           }
         ]
@@ -1344,23 +1365,23 @@ export const WEEKS = [
           {
             id: 'w8d3t1',
             skill: 'writing',
-            title: 'Writing Task 2: Advantages/Disadvantages essay',
-            description: 'Write a full advantages/disadvantages essay. Structure: Introduction (paraphrase + thesis), Body 1 (advantages), Body 2 (disadvantages), Conclusion (your opinion on balance). Aim for balanced treatment of both sides.',
-            minutes: 55
+            title: 'Writing: Timed outline practice',
+            description: 'Analyze 3 Task 2 prompts and 2 Task 1 diagrams. Brainstorm arguments, structure paragraphs, and write introductions. Do not write full essays.',
+            minutes: 40
           },
           {
             id: 'w8d3t2',
-            skill: 'grammar',
-            title: 'Grammar: Mixed conditionals review',
-            description: 'Review all conditional types including mixed conditionals (past condition + present result, or present condition + past result). Practice writing sentences about hypothetical educational/environmental scenarios.',
-            minutes: 15
+            skill: 'writing',
+            title: 'Grammar and spelling checklist review',
+            description: 'Review your grammar and spelling error lists one final time. Memorize your personal warning signs.',
+            minutes: 25
           },
           {
             id: 'w8d3t3',
-            skill: 'writing',
-            title: 'Read model band 8+ essays',
-            description: 'Read 3 model Band 8+ Task 2 essays. Analyze what makes them excellent: clear position, well-developed arguments, varied vocabulary, range of grammar structures, cohesion devices. Note techniques to incorporate in your writing.',
-            minutes: 20
+            skill: 'vocabulary',
+            title: 'High-Yield Collocations review',
+            description: 'Review key collocations and transition linkers in your notebook.',
+            minutes: 15
           }
         ]
       },
@@ -1371,22 +1392,22 @@ export const WEEKS = [
           {
             id: 'w8d4t1',
             skill: 'speaking',
-            title: 'Speaking: Full mock test — all 3 parts',
-            description: 'Complete a full Speaking mock test. Focus on demonstrating range: use a variety of tenses, conditionals, passive voice, and complex sentences. Aim for natural fluency over perfection.',
+            title: 'Speaking: Final mock interview',
+            description: 'Record yourself completing a final Speaking mock interview. Focus on natural fluency and intonations.',
             minutes: 20
           },
           {
             id: 'w8d4t2',
             skill: 'speaking',
-            title: 'Focus on pronunciation clarity and natural intonation',
-            description: 'Listen to your recording focusing only on pronunciation. Check: word stress accuracy, sentence stress patterns, intonation for questions vs statements, and linking between words. Practice 5 sentences with improved intonation.',
+            title: 'Review speaking transition words',
+            description: 'Review abstract linkers and hedging phrases. Warm up your voice by reading out loud for 10 minutes.',
             minutes: 15
           },
           {
             id: 'w8d4t3',
-            skill: 'speaking',
-            title: 'Practice self-correction techniques',
-            description: 'Practice natural self-correction in speaking: "I mean...", "What I\'m trying to say is...", "Well, actually...". This shows the examiner you can monitor your own language. Record 5 answers and practice correcting yourself naturally.',
+            skill: 'general',
+            title: 'Confidence check: W1 vs W8 comparison',
+            description: 'Look back at your Diagnostic test scores and first essays. Note how much your speed, accuracy, and confidence have improved.',
             minutes: 15
           }
         ]
@@ -1397,24 +1418,24 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w8d5t1',
-            skill: 'reading',
-            title: 'Reading: Focus on weakest question type from error log',
-            description: 'Check your error log and identify your weakest reading question type. Dedicate this session to intensive practice of that specific question type. Complete at least 3 exercises.',
-            minutes: 40
+            skill: 'general',
+            title: 'Light Practice: Warm-up drill',
+            description: 'Do a very light practice session: 1 reading passage and 1 listening section. Do not score yourself; just focus on focus and ease.',
+            minutes: 30
           },
           {
             id: 'w8d5t2',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 7-8 — learn 15 words',
-            description: 'Learn 15 words from AWL Sublists 7-8. At this point you should have a strong foundation of 100+ AWL words. Focus on words that appear frequently in academic reading passages.',
-            minutes: 25
+            skill: 'general',
+            title: 'Review exam day checklist',
+            description: 'Review your exam checklist. Print your registration details, prepare your ID, pencils, erasers, and plan your route to the test centre.',
+            minutes: 15
           },
           {
             id: 'w8d5t3',
-            skill: 'grammar',
-            title: 'Review all grammar structures learned',
-            description: 'Comprehensive grammar review: tenses, passive voice, relative clauses, conditionals (all types), complex sentences, cleft sentences, inversions, participle clauses, nominalization. Write 2 sentences demonstrating each structure.',
-            minutes: 20
+            skill: 'general',
+            title: 'Organize study materials & log out',
+            description: 'Pack away your study books. Organize your notes. Clear your mind. Log out of study mode.',
+            minutes: 15
           }
         ]
       },
@@ -1424,704 +1445,22 @@ export const WEEKS = [
         tasks: [
           {
             id: 'w8d6t1',
-            skill: 'reading',
-            title: 'MONTH 2 CHECKPOINT: Full mock test — all 4 skills',
-            description: 'Complete a full IELTS mock test under strict exam conditions: Listening (30 min), Reading (60 min), Writing (60 min), Speaking (14 min). Simulate the exam as closely as possible. No breaks between L and R.',
-            minutes: 180
-          },
-          {
-            id: 'w8d6t2',
-            skill: 'writing',
-            title: 'Score yourself — compare to Month 1 results',
-            description: 'Score your tests and compare with your Month 1 checkpoint results. Calculate the improvement in each skill. Celebrate progress! Identify remaining gaps. Plan Phase 3 priorities based on this analysis.',
-            minutes: 30
-          }
-        ]
-      },
-      {
-        day: 0,
-        label: 'Sunday',
-        tasks: [
-          {
-            id: 'w8d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest day. You\'ve completed Phase 2! Reflect on your progress from Week 1. Phase 3 focuses on refinement and exam simulation — the final push.',
-            minutes: 0
-          }
-        ]
-      }
-    ]
-  },
-
-  // ===== PHASE 3: REFINEMENT & PEAK PERFORMANCE (Weeks 9-12) ================
-  {
-    id: 9,
-    title: 'Exam Simulation Begins',
-    phase: 'refinement',
-    phaseLabel: 'Phase 3: Refinement & Peak Performance',
-    summary: 'Begin exam simulations with strict timing. Focus on analysis-driven practice and targeting weak areas.',
-    days: [
-      {
-        day: 1,
-        label: 'Monday',
-        tasks: [
-          {
-            id: 'w9d1t1',
-            skill: 'reading',
-            title: 'Full Reading test under strict timing',
-            description: 'Complete a full 3-passage Reading test in exactly 60 minutes. No extra time. Practice strict time management: if you\'re stuck on a question for more than 2 minutes, guess and move on.',
-            minutes: 65
-          },
-          {
-            id: 'w9d1t2',
-            skill: 'reading',
-            title: 'Review: 60% analysis, 40% new practice',
-            description: 'Spend 60% of your review time analyzing why you got questions wrong and 40% practicing your weak question types. This ratio maximizes improvement at this stage. Quality of analysis matters more than volume of practice.',
-            minutes: 30
-          },
-          {
-            id: 'w9d1t3',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 9 — learn 15 words',
-            description: 'Begin AWL Sublist 9. These are less frequent but still important academic words. Learn 15 words with definitions, word families, and IELTS-relevant example sentences.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 2,
-        label: 'Tuesday',
-        tasks: [
-          {
-            id: 'w9d2t1',
-            skill: 'listening',
-            title: 'Full Listening test',
-            description: 'Complete a full Listening test under exam conditions. Focus on staying concentrated throughout all 4 sections. Use the 30-second breaks between sections to pre-read the next set of questions.',
-            minutes: 40
-          },
-          {
-            id: 'w9d2t2',
-            skill: 'listening',
-            title: 'Detailed error analysis — categorize mistake types',
-            description: 'Categorize every error: (1) didn\'t hear the word, (2) heard but didn\'t understand, (3) understood but wrote wrong answer, (4) spelling error, (5) fell for distractor, (6) lost concentration. Identify your most common category.',
-            minutes: 25
-          },
-          {
-            id: 'w9d2t3',
-            skill: 'listening',
-            title: 'Weak question type targeted practice',
-            description: 'Based on your error analysis, practice your weakest Listening question type intensively. If it\'s Section 4 matching, do 3 more Section 4 exercises. If it\'s map labeling, practice spatial vocabulary and directional listening.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 3,
-        label: 'Wednesday',
-        tasks: [
-          {
-            id: 'w9d3t1',
-            skill: 'writing',
-            title: 'Writing Task 1: Timed 20 minutes strict',
-            description: 'Write a complete Task 1 response in exactly 20 minutes. Choose any visual type you find challenging. Focus on: paraphrasing the question, writing a clear overview, selecting key features, and hitting 150+ words.',
-            minutes: 25
-          },
-          {
-            id: 'w9d3t2',
-            skill: 'writing',
-            title: 'Writing Task 2: Timed 40 minutes strict',
-            description: 'Write a complete Task 2 essay in exactly 40 minutes. Budget: 5 min planning, 30 min writing, 5 min checking. Choose an essay type you find most difficult. Aim for 250-280 words with clear structure.',
-            minutes: 45
-          },
-          {
-            id: 'w9d3t3',
-            skill: 'writing',
-            title: 'Self-assess against band descriptors',
-            description: 'Assess both your Task 1 and Task 2 responses against the official Band Descriptors. Be honest and specific. For each criterion, note what band you think you\'re at and what you need to do to move up one band.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 4,
-        label: 'Thursday',
-        tasks: [
-          {
-            id: 'w9d4t1',
-            skill: 'speaking',
-            title: 'Speaking: Full mock with partner or tutor',
-            description: 'If possible, practice with a speaking partner or tutor who can give live feedback. Complete all 3 parts. If no partner is available, use a mirror and record yourself. Focus on maintaining eye contact and natural delivery.',
-            minutes: 25
-          },
-          {
-            id: 'w9d4t2',
-            skill: 'speaking',
-            title: 'Focus on Part 3 abstract discussions',
-            description: 'Practice 5 Part 3 questions requiring abstract discussion: causes and effects, predictions, comparisons between past and present, advantages and disadvantages of social trends. Use hedging and advanced vocabulary.',
-            minutes: 20
-          },
-          {
-            id: 'w9d4t3',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 9 continued',
-            description: 'Learn 15 more AWL Sublist 9 words. Review cumulative vocabulary. Write sentences using words from multiple sublists together to reinforce connections between academic words.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 5,
-        label: 'Friday',
-        tasks: [
-          {
-            id: 'w9d5t1',
-            skill: 'reading',
-            title: 'Full practice test — Reading + Listening',
-            description: 'Complete a full Listening test followed immediately by a full Reading test. Simulate the real exam sequence. Practice maintaining focus and energy throughout the combined 90+ minutes.',
-            minutes: 110
-          },
-          {
-            id: 'w9d5t2',
-            skill: 'reading',
-            title: 'Score and log results',
-            description: 'Score both tests. Record results in your progress tracker. Compare with previous practice test scores. Note any significant improvements or persistent weaknesses.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 6,
-        label: 'Saturday',
-        tasks: [
-          {
-            id: 'w9d6t1',
-            skill: 'writing',
-            title: 'Revise + rewrite previous weak essays',
-            description: 'Take 2 of your weakest essays from earlier weeks. Rewrite them from scratch, incorporating everything you\'ve learned about structure, vocabulary, grammar, and cohesion. Compare the rewritten versions with originals.',
-            minutes: 60
-          },
-          {
-            id: 'w9d6t2',
-            skill: 'reading',
-            title: 'Review error log — identify top 10 recurring mistakes',
-            description: 'Go through your entire error log. Identify the 10 most frequently occurring mistakes across all skills. Create a focused action plan for eliminating each one. This is your priority list for the remaining weeks.',
-            minutes: 20
-          },
-          {
-            id: 'w9d6t3',
-            skill: 'vocabulary',
-            title: 'Create personal word lists from errors',
-            description: 'Extract all vocabulary-related errors from your error log. Create a personal "danger words" list — words you consistently confuse, misspell, or use incorrectly. Review and practice these words specifically.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 0,
-        label: 'Sunday',
-        tasks: [
-          {
-            id: 'w9d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest day. Three weeks to go. You\'ve built a strong foundation and developed your skills. Phase 3 is about sharpening everything to peak performance.',
-            minutes: 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 10,
-    title: 'Intensive Testing',
-    phase: 'refinement',
-    phaseLabel: 'Phase 3: Refinement & Peak Performance',
-    summary: 'Intensive testing week with full mock tests, targeted weakness drills, and comprehensive vocabulary review.',
-    days: [
-      {
-        day: 1,
-        label: 'Monday',
-        tasks: [
-          {
-            id: 'w10d1t1',
-            skill: 'reading',
-            title: 'Reading: Target 3 weakest question types',
-            description: 'From your error log, identify your 3 weakest Reading question types. Complete intensive practice for each one. Focus on understanding why you make mistakes rather than just doing more questions.',
-            minutes: 45
-          },
-          {
-            id: 'w10d1t2',
-            skill: 'grammar',
-            title: 'Grammar: Final review of advanced structures',
-            description: 'Review all advanced grammar structures: inversions, cleft sentences, participle clauses, mixed conditionals, nominalization. Write a mini-essay (150 words) using at least one of each structure.',
-            minutes: 25
-          },
-          {
-            id: 'w10d1t3',
-            skill: 'vocabulary',
-            title: 'Vocabulary: Review 50 weakest words from AWL',
-            description: 'Go through your vocabulary notes and identify the 50 AWL words you know least well. Spend focused time reviewing these with flashcards, example sentences, and self-quizzing. Aim for 90%+ recall.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 2,
-        label: 'Tuesday',
-        tasks: [
-          {
-            id: 'w10d2t1',
-            skill: 'listening',
-            title: 'Listening: Full test + score',
-            description: 'Complete a full Listening test and score it immediately. At this stage, you should be consistently scoring 30+ out of 40 (Band 7+). If not, identify the sections pulling your score down.',
-            minutes: 40
-          },
-          {
-            id: 'w10d2t2',
-            skill: 'listening',
-            title: 'Practice Section 4 at 1.25x speed',
-            description: 'Take 2 Section 4 exercises and play them at 1.25x speed. This trains your ear for the fastest academic content. Don\'t worry about perfect scores — the goal is building comprehension speed.',
-            minutes: 20
-          },
-          {
-            id: 'w10d2t3',
-            skill: 'listening',
-            title: 'Error log update',
-            description: 'Update your error log with today\'s mistakes. Note if your common error patterns are decreasing. If the same types of mistakes persist, consider adjusting your listening strategy for those specific question types.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 3,
-        label: 'Wednesday',
-        tasks: [
-          {
-            id: 'w10d3t1',
-            skill: 'writing',
-            title: 'Writing: Rewrite 2 previous Task 2 essays with feedback',
-            description: 'Take 2 essays from earlier weeks where you received feedback or self-identified weaknesses. Rewrite them completely, addressing all feedback points. Focus on improving Task Response and Coherence & Cohesion.',
-            minutes: 60
-          },
-          {
-            id: 'w10d3t2',
-            skill: 'writing',
-            title: 'Timed Task 1 practice',
-            description: 'Write a Task 1 response in exactly 20 minutes. Choose a visual type you haven\'t practiced recently. Focus on speed and accuracy. This should now feel comfortable within the time limit.',
-            minutes: 20
-          },
-          {
-            id: 'w10d3t3',
-            skill: 'writing',
-            title: 'Read band 9 model answers',
-            description: 'Read 2-3 Band 9 model answers for both Task 1 and Task 2. Analyze what makes them exceptional: sophistication of vocabulary, range of grammar, clarity of argument, and natural cohesion.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 4,
-        label: 'Thursday',
-        tasks: [
-          {
-            id: 'w10d4t1',
-            skill: 'speaking',
-            title: 'Speaking: Record full mock — compare to Week 4',
-            description: 'Record a full Speaking mock test. Then listen to your Week 4 recording (if available) and compare. Note improvements in fluency, vocabulary range, grammatical accuracy, and pronunciation. Celebrate your progress.',
-            minutes: 25
-          },
-          {
-            id: 'w10d4t2',
-            skill: 'speaking',
-            title: 'Practice uncommon Part 2 topics',
-            description: 'Practice cue cards on less common topics: "Describe a time you helped someone", "Describe an interesting conversation", "Describe something you want to learn". These unexpected topics test your flexibility.',
-            minutes: 20
-          },
-          {
-            id: 'w10d4t3',
-            skill: 'grammar',
-            title: 'Grammar: Accuracy over complexity drill',
-            description: 'At this stage, focus on accuracy over complexity. Complete error correction exercises. Practice identifying and fixing common grammatical errors in your own writing and speaking samples.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 5,
-        label: 'Friday',
-        tasks: [
-          {
-            id: 'w10d5t1',
-            skill: 'reading',
-            title: 'Full mock test — all 4 skills',
-            description: 'Complete a full IELTS mock test: Listening, Reading, Writing, and Speaking. Treat this as a dress rehearsal for the exam. Use strict timing, no breaks between L and R, and simulate exam conditions as closely as possible.',
-            minutes: 180
-          },
-          {
-            id: 'w10d5t2',
-            skill: 'writing',
-            title: 'Score and analyze',
-            description: 'Score your Listening and Reading. Self-assess Writing and Speaking. Record all results. You should be seeing consistent improvement. Identify any remaining weak areas for the final 2 weeks.',
-            minutes: 30
-          }
-        ]
-      },
-      {
-        day: 6,
-        label: 'Saturday',
-        tasks: [
-          {
-            id: 'w10d6t1',
-            skill: 'reading',
-            title: 'Review all errors from this week',
-            description: 'Go through every error from this week\'s practice and mock test. Categorize them and look for any new patterns. Create a final study priority list for the remaining 2 weeks.',
-            minutes: 40
-          },
-          {
-            id: 'w10d6t2',
-            skill: 'vocabulary',
-            title: 'Topic vocabulary final review — all 10 topics',
-            description: 'Review vocabulary from all 10 topic areas: Education, Technology, Environment, Health, Society & Crime, Globalization, Work & Employment, Media & Arts, Transportation, Culture. Quick-fire self-quiz on each topic.',
-            minutes: 30
-          },
-          {
-            id: 'w10d6t3',
-            skill: 'vocabulary',
-            title: 'Collocation review',
-            description: 'Review all academic collocations learned throughout the course. Test yourself by completing gap-fill exercises. Focus on collocations that appear frequently in IELTS Writing and Speaking contexts.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 0,
-        label: 'Sunday',
-        tasks: [
-          {
-            id: 'w10d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest day. Two weeks to go. You are well-prepared. The final two weeks are about fine-tuning and building exam confidence.',
-            minutes: 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 11,
-    title: 'Weakness Targeting',
-    phase: 'refinement',
-    phaseLabel: 'Phase 3: Refinement & Peak Performance',
-    summary: 'Target remaining weaknesses with intensive practice while maintaining strength in other skills.',
-    days: [
-      {
-        day: 1,
-        label: 'Monday',
-        tasks: [
-          {
-            id: 'w11d1t1',
-            skill: 'reading',
-            title: 'Identify weakest skill — dedicate 50% time',
-            description: 'Based on your mock test results, identify your single weakest skill. Dedicate the majority of today\'s session to intensive practice in that skill. Use targeted exercises that address your specific weak areas.',
-            minutes: 45
-          },
-          {
-            id: 'w11d1t2',
-            skill: 'listening',
-            title: 'Other skills maintenance practice',
-            description: 'Do lighter maintenance practice for your stronger skills. The goal is to keep them sharp without diverting too much energy from your weakest area. Quick exercises, 10 minutes per skill.',
-            minutes: 30
-          },
-          {
-            id: 'w11d1t3',
-            skill: 'vocabulary',
-            title: 'AWL Sublist 10 — final words',
-            description: 'Learn the final set of AWL words from Sublist 10. These are the least frequent but still valuable for reading comprehension and advanced writing. You\'ve now covered the complete Academic Word List!',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 2,
-        label: 'Tuesday',
-        tasks: [
-          {
-            id: 'w11d2t1',
-            skill: 'reading',
-            title: 'Weakest skill intensive practice',
-            description: 'Continue intensive practice of your weakest skill. If it\'s Reading, do 2 timed passages. If it\'s Listening, do a full test + analysis. If it\'s Writing, write 2 timed responses. If it\'s Speaking, do 2 full mock interviews.',
-            minutes: 50
-          },
-          {
-            id: 'w11d2t2',
-            skill: 'grammar',
-            title: 'Grammar: Self-correction techniques practice',
-            description: 'Practice identifying and correcting errors in your own work. Take a recent essay and proofread it twice: once for grammar accuracy, once for vocabulary precision. Develop a personal checklist of things to check.',
-            minutes: 20
-          },
-          {
-            id: 'w11d2t3',
-            skill: 'vocabulary',
-            title: 'Vocabulary: Personal word list review',
-            description: 'Review your personal "danger words" list and all vocabulary that you\'ve struggled with throughout the course. Use spaced repetition: test yourself, mark words you got right, focus more on words you got wrong.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 3,
-        label: 'Wednesday',
-        tasks: [
-          {
-            id: 'w11d3t1',
-            skill: 'writing',
-            title: 'Writing: Timed Task 1 (20min) + Task 2 (40min) strict',
-            description: 'Complete a full timed Writing test: Task 1 in 20 minutes, Task 2 in 40 minutes. This should feel like second nature by now. Focus on quality within the time constraints. Check for errors in the final 2 minutes of each task.',
-            minutes: 65
-          },
-          {
-            id: 'w11d3t2',
-            skill: 'writing',
-            title: 'Self-assess + identify remaining issues',
-            description: 'Assess your writing against Band Descriptors. At this point, your assessment should be very accurate. Identify 1-2 remaining issues that could gain you an extra half band. Make a specific plan to address them.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 4,
-        label: 'Thursday',
-        tasks: [
-          {
-            id: 'w11d4t1',
-            skill: 'speaking',
-            title: 'Speaking: 2 full mock tests back-to-back',
-            description: 'Complete 2 full Speaking mock tests consecutively. The first test warms you up; the second tests your consistency and stamina. Record both and compare your performance across them.',
-            minutes: 40
-          },
-          {
-            id: 'w11d4t2',
-            skill: 'speaking',
-            title: 'Review pronunciation and fluency',
-            description: 'Listen to your recordings focusing specifically on pronunciation and fluency. Count hesitations, filler words (um, uh), and self-corrections. Aim to reduce these in your next practice session.',
-            minutes: 15
-          },
-          {
-            id: 'w11d4t3',
-            skill: 'reading',
-            title: 'Light reading practice',
-            description: 'Do a light reading practice session — 1 passage with mixed question types. Don\'t time yourself strictly; focus on accuracy and understanding your approach to each question type.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 5,
-        label: 'Friday',
-        tasks: [
-          {
-            id: 'w11d5t1',
-            skill: 'reading',
-            title: 'Full mock test',
-            description: 'Complete a full IELTS mock test: all 4 skills under exam conditions. This is your penultimate full test. Treat it with full seriousness. Your score here should be very close to your target band.',
-            minutes: 180
-          },
-          {
-            id: 'w11d5t2',
-            skill: 'writing',
-            title: 'Score — check if consistently hitting 7.0+',
-            description: 'Score your test and check if you\'re consistently hitting your target band (7.0+). If yes, maintain your approach. If not, identify the specific sub-skill or question type holding you back and plan final-week remediation.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 6,
-        label: 'Saturday',
-        tasks: [
-          {
-            id: 'w11d6t1',
-            skill: 'reading',
-            title: 'Error log final review — top 10 mistakes prevention plan',
-            description: 'Final comprehensive review of your error log. Write out your top 10 most common mistakes and create a specific prevention strategy for each. These are the things to keep in mind on exam day.',
-            minutes: 30
-          },
-          {
-            id: 'w11d6t2',
-            skill: 'vocabulary',
-            title: 'Light vocabulary review',
-            description: 'Light review of key vocabulary. Focus on words that frequently appear in IELTS contexts. Don\'t try to learn new words — consolidate what you know.',
-            minutes: 20
-          },
-          {
-            id: 'w11d6t3',
-            skill: 'grammar',
-            title: 'Light grammar review',
-            description: 'Light review of key grammar structures. Focus on the structures you use most in your writing and speaking. Check that you\'re using them accurately and consistently.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 0,
-        label: 'Sunday',
-        tasks: [
-          {
-            id: 'w11d0t1',
-            skill: 'reading',
-            title: 'Rest day',
-            description: 'Rest day. One final week to go. You\'ve done incredible work over 11 weeks. The final week is about maintaining confidence and peaking at the right time.',
-            minutes: 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 12,
-    title: 'Final Preparation',
-    phase: 'refinement',
-    phaseLabel: 'Phase 3: Refinement & Peak Performance',
-    summary: 'Final exam simulation, light review, and mental preparation. Taper study intensity toward exam day.',
-    days: [
-      {
-        day: 1,
-        label: 'Monday',
-        tasks: [
-          {
-            id: 'w12d1t1',
-            skill: 'reading',
-            title: 'Full mock exam under STRICT exam conditions',
-            description: 'Your final full mock test. Set up the exact exam environment: quiet room, desk, timer, no phone, no breaks between Listening and Reading. Complete all 4 skills. This is your final dress rehearsal.',
-            minutes: 180
-          },
-          {
-            id: 'w12d1t2',
-            skill: 'writing',
-            title: 'Score and final analysis',
-            description: 'Score your final mock test. Compare with all previous mock test scores to see your improvement trajectory. Note any last-minute adjustments needed. This score is your realistic exam prediction.',
-            minutes: 30
-          }
-        ]
-      },
-      {
-        day: 2,
-        label: 'Tuesday',
-        tasks: [
-          {
-            id: 'w12d2t1',
-            skill: 'reading',
-            title: 'Review all mistake patterns one final time',
-            description: 'Go through your error log one last time. Focus on your top 10 prevention strategies. Mentally rehearse how you\'ll handle each question type on exam day. This is about cementing good habits.',
-            minutes: 30
-          },
-          {
-            id: 'w12d2t2',
-            skill: 'reading',
-            title: 'Light reading — 1 passage',
-            description: 'Do one reading passage at a relaxed pace. Don\'t stress about timing. Focus on enjoying the process and confirming your strategies work. This is maintenance, not intensive practice.',
-            minutes: 25
-          },
-          {
-            id: 'w12d2t3',
-            skill: 'listening',
-            title: 'Light listening — 1 test section',
-            description: 'Listen to one test section (Section 2 or 3). Practice your prediction and note-taking techniques one more time. Confirm your listening strategies are working well.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 3,
-        label: 'Wednesday',
-        tasks: [
-          {
-            id: 'w12d3t1',
-            skill: 'writing',
-            title: 'Writing: 1 final timed Task 1 + Task 2',
-            description: 'Write your final timed Writing practice: Task 1 in 20 minutes and Task 2 in 40 minutes. Focus on executing your well-practiced essay structures confidently. Check for errors in the final minutes.',
-            minutes: 65
-          },
-          {
-            id: 'w12d3t2',
-            skill: 'speaking',
-            title: 'Speaking: 1 final mock interview',
-            description: 'Complete your final Speaking mock test. Focus on being natural, confident, and demonstrating your full range of vocabulary and grammar. This is about building confidence, not learning new things.',
-            minutes: 20
-          }
-        ]
-      },
-      {
-        day: 4,
-        label: 'Thursday',
-        tasks: [
-          {
-            id: 'w12d4t1',
-            skill: 'vocabulary',
-            title: 'Light review — flashcards and error log highlights',
-            description: 'Do a light flashcard review of your most important vocabulary. Skim through your error log highlights — not to study intensively, but to refresh your memory of key strategies and common pitfalls.',
-            minutes: 30
-          },
-          {
-            id: 'w12d4t2',
-            skill: 'reading',
-            title: 'Confidence building — compare Week 1 vs now',
-            description: 'Compare your Week 1 diagnostic scores with your most recent mock test scores. Calculate your improvement. Review how far you\'ve come in reading speed, listening accuracy, writing quality, and speaking fluency.',
-            minutes: 15
-          },
-          {
-            id: 'w12d4t3',
-            skill: 'reading',
-            title: 'Prepare exam day materials',
-            description: 'Prepare everything you need for exam day: valid ID/passport, pencils (2B for computer/pencil for paper), eraser, water bottle. Know your test center location and plan your journey. Set multiple alarms.',
-            minutes: 10
-          }
-        ]
-      },
-      {
-        day: 5,
-        label: 'Friday',
-        tasks: [
-          {
-            id: 'w12d5t1',
-            skill: 'reading',
-            title: 'Very light practice — 1 reading passage, 1 listening section',
-            description: 'Do minimal practice today: just 1 reading passage and 1 listening section. The goal is to keep your brain in "English mode" without tiring yourself. Think of this as a warm-up, not a workout.',
-            minutes: 40
-          },
-          {
-            id: 'w12d5t2',
-            skill: 'speaking',
-            title: 'Rest and mental preparation',
-            description: 'Spend time visualizing success. Imagine yourself calmly working through each section of the exam. Practice relaxation techniques: deep breathing, positive self-talk. Go to bed early and get a full night\'s sleep.',
-            minutes: 15
-          }
-        ]
-      },
-      {
-        day: 6,
-        label: 'Saturday',
-        tasks: [
-          {
-            id: 'w12d6t1',
-            skill: 'reading',
-            title: 'REST DAY — No studying',
-            description: 'No studying at all today. Do light exercise, eat well, stay hydrated, and get plenty of sleep. Your brain needs rest to perform at its best. Trust your preparation — you\'ve done the work.',
+            skill: 'general',
+            title: 'REST DAY: Relax and recharge',
+            description: 'Do absolutely no studying today. Eat well, drink plenty of water, and get at least 8 hours of sleep to ensure peak mental clarity tomorrow.',
             minutes: 0
           }
         ]
       },
       {
-        day: 0,
+        day: 7,
         label: 'Sunday',
         tasks: [
           {
-            id: 'w12d0t1',
-            skill: 'reading',
-            title: 'REST — Exam day tomorrow or soon',
-            description: 'Stay calm and confident. You\'ve completed a comprehensive 12-week preparation program. Trust your skills, your strategies, and your preparation. Good luck — you\'ve got this!',
+            id: 'w8d7t1',
+            skill: 'general',
+            title: 'EXAM DAY',
+            description: 'Wake up early, eat a healthy breakfast, arrive at the test centre with time to spare, stay calm, and focus. You are fully prepared. Good luck!',
             minutes: 0
           }
         ]
@@ -2130,9 +1469,7 @@ export const WEEKS = [
   }
 ];
 
-// ----------------------------------------------------------------------------
-// 2. VOCABULARY — 200+ words: AWL Sublists 1-10 + Topic vocabulary
-// ----------------------------------------------------------------------------
+
 export const VOCABULARY = [
   // ===== AWL SUBLIST 1 =======================================================
   { word: 'analyse', definition: 'To examine something in detail to understand it or explain it', example: 'The data was analysed to identify emerging trends in education.', collocations: ['analyse data', 'analyse results', 'critically analyse'], sublist: 1, topics: ['general'] },

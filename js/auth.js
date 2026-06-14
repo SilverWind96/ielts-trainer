@@ -160,7 +160,7 @@ function renderAuthGate(gate) {
       <div class="auth-gate-logo">
         <span class="auth-gate-logo-icon">🎯</span>
         <h2>IELTS Trainer</h2>
-        <span class="auth-gate-logo-subtitle">12-Week Study Companion</span>
+        <span class="auth-gate-logo-subtitle">8-Week Study Companion</span>
       </div>
       <p class="auth-gate-desc">
         Access your personalized IELTS study calendar, master AWL vocabulary flippers, track streaks, and sync your study schedules across devices.
@@ -261,7 +261,7 @@ export function renderAuthWidget() {
     profileWidget.innerHTML = `
       <div class="auth-prompt-card">
         <span class="auth-prompt-title">Sync Your Progress</span>
-        <p class="auth-prompt-desc">Sign in to save your 12-week schedule and AWL word practice across devices.</p>
+        <p class="auth-prompt-desc">Sign in to save your 8-week schedule and AWL word practice across devices.</p>
         ${!client_id ? `
           <div class="auth-setup-config">
             <span class="setup-config-label">Paste Google Client ID:</span>
